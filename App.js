@@ -1,11 +1,16 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import {StyleSheet, View } from 'react-native';
+import FABComponent from './components/FABComponent/FABComponent.js'
 
 export default class App extends React.Component {
+
+    constructor(){
+        super();
+    }
   render() {
     return (
       <View style={styles.container}>
-        <Text>gh!</Text>
+          <FABComponent></FABComponent>
       </View>
     );
   }
@@ -14,7 +19,7 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#f3f3f3',
     alignItems: 'center',
     justifyContent: 'center',
   },
