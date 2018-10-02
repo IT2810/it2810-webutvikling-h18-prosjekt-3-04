@@ -8,11 +8,14 @@ export default class CreateTextTaskView extends React.Component {
     state = {
         isDateTimePickerVisible: false,
     };
+    handleCreateTextTaskSubmit(){
 
+    }
     _showDateTimePicker = () => this.setState({ isDateTimePickerVisible: true });
 
 
     _hideDateTimePicker = () => this.setState({ isDateTimePickerVisible: false });
+
 
     _handleDatePicked = (date) => {
         console.log('A date has been picked: ', date);
@@ -54,6 +57,9 @@ export default class CreateTextTaskView extends React.Component {
                     is24Hour={true}
                     mode={"datetime"}
                 />
+                <TouchableOpacity style={styles.createTaskButton} onPress={this.handleCreateTextTaskSubmit}>
+                    <Text style={styles.createTaskButtonText}>Create task</Text>
+                </TouchableOpacity>
             </View>
         );
     }
