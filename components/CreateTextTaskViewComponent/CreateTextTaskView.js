@@ -1,19 +1,17 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import styles from './styles/styles'
-import FABComponent from '../../components/FABComponent/FABComponent.js'
-import CheckBoxComponent from '../CheckboxComponent/CheckboxComponent'
 
-export default class HomeView extends React.Component {
+export default class CreateTextTaskView extends React.Component {
 
     static navigationOptions = {
-        title: 'BIRD',
+        title: 'Create Text Task',
         headerStyle: {
             backgroundColor: '#fff'
         },
+        headerTintColor: '#ff0042',
         headerTitleStyle: {
             color: '#ff0042',
-            letterSpacing: 5,
             fontSize: 20,
             fontWeight: "bold",
         }
@@ -22,8 +20,7 @@ export default class HomeView extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-                <CheckBoxComponent/>
-                <FABComponent navigation={this.props.navigation}/>
+                <Text> ÅÅÅÅ DU ER SÅ JÆVLIG TEIT UUUUUUUUG </Text>
             </View>
         );
     }
