@@ -1,23 +1,28 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import {StyleSheet, View } from 'react-native';
+import FABComponent from './components/FABComponent/FABComponent.js'
 import CheckBoxComponent from './components/checkboxComponent/CheckboxComponent'
 
 export default class App extends React.Component {
-    render() {
-        return (
-            <View style={styles.container}>
-                <Text>gh!</Text>
-                <CheckBoxComponent/>
-            </View>
-        );
+
+    constructor(){
+        super();
     }
+  render() {
+    return (
+      <View style={styles.container}>
+        <CheckBoxComponent/>
+        <FABComponent></FABComponent>
+      </View>
+    );
+  }
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
+  container: {
+    flex: 1,
+    backgroundColor: '#f3f3f3',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
 });

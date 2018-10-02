@@ -17,7 +17,8 @@
     "react-native-fa-icons": "^3.0.1",
     "react-redux": "^5.0.7",
     "redux": "^4.0.0",
-    "react-native" link
+    "react-native-action-button": "2.8.5",
+    "react-native-vector-icons": "^5.0.0"
   },
   "rnpm": {
     "assets": [
