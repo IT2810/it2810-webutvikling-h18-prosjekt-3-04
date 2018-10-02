@@ -1,6 +1,7 @@
 import React from 'react';
 import {StyleSheet, View } from 'react-native';
 import FABComponent from './components/FABComponent/FABComponent.js'
+import CheckBoxComponent from './components/checkboxComponent/CheckboxComponent'
 
 export default class App extends React.Component {
 
@@ -10,7 +11,8 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-          <FABComponent></FABComponent>
+        <CheckBoxComponent/>
+        <FABComponent></FABComponent>
       </View>
     );
   }
