@@ -1,28 +1,21 @@
 import React from 'react';
-import {StyleSheet, View } from 'react-native';
-import FABComponent from './components/FABComponent/FABComponent.js'
-import CheckBoxComponent from './components/checkboxComponent/CheckboxComponent'
+import { StyleSheet, Text, View } from 'react-native';
+import {createStackNavigator} from "react-navigation";
+import HomeView from "./components/HomeViewComponent/HomeView";
+import CreateTextTaskView from "./components/CreateTextTaskViewComponent/CreateTextTaskView";
 
 export default class App extends React.Component {
-
-    constructor(){
-        super();
+    render() {
+        return <AppWithNavigation />;
     }
-  render() {
-    return (
-      <View style={styles.container}>
-        <CheckBoxComponent/>
-        <FABComponent></FABComponent>
-      </View>
-    );
-  }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#f3f3f3',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+const AppWithNavigation = createStackNavigator(
+    {
+        Home: HomeView,
+        TextTask: CreateTextTaskView,
+    },
+    {
+        initialRouteName: 'Home',
+    }
+);

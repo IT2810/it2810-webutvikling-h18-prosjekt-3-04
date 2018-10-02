@@ -19,7 +19,6 @@ class FABComponent extends React.Component {
         console.log('toggle button handler: '+ this.state.status);
     }
 
-
     render() {
         return (
             <ActionButton buttonColor="rgba(255,0,66,1)">
@@ -32,13 +31,14 @@ class FABComponent extends React.Component {
                 <ActionButton.Item
                     buttonColor="#a3052e"
                     title="New text task"
-                    onPress={() => this.toggleCreateTaskSubView()}>
+                    onPress={() => this.props.navigation.navigate('TextTask')}>
                     <Icon name="md-document" style={styles.actionButtonIcon}/>
                 </ActionButton.Item>
             </ActionButton>
         );
     }
 }
+
 const styles = StyleSheet.create({
     actionButtonIcon: {
         fontSize: 20,
@@ -46,4 +46,5 @@ const styles = StyleSheet.create({
         color: 'white',
     },
 });
+
 export default FABComponent;
