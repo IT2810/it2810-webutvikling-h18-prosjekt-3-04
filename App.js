@@ -1,28 +1,19 @@
 import React from 'react';
-// import Header from './components/header/Header'
 import { StyleSheet, Text, View } from 'react-native';
-import { Header } from 'react-native-elements'
+import {createStackNavigator} from "react-navigation";
+import HomeView from "./components/HomeViewComponent/HomeView";
 
 export default class App extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Header backgroundColor={ '#fff' }  centerComponent={{ text: 'BIRD', style: styles.text }}/>
-      </View>
-    );
-  }
+    render() {
+        return <Navigator />;
+    }
 }
 
-const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: '#f6f6f6',
+const Navigator = createStackNavigator(
+    {
+        Home: HomeView,
     },
-
-    text: {
-        color: '#ff0042',
-        letterSpacing: 5,
-        fontSize: 20,
-        fontWeight: "bold",
-    },
-});
+    {
+        initialRouteName: 'Home',
+    }
+);
