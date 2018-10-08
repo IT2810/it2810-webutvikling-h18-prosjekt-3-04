@@ -21,7 +21,7 @@ class FABComponent extends React.Component {
 
     render() {
         return (
-            <ActionButton buttonColor="rgba(255,0,66,1)">
+            <ActionButton buttonColor="rgba(255,0,66,1)" style={styles.FAB}>
                 <ActionButton.Item
                     buttonColor="#cc0035"
                     title="New image task"
@@ -44,6 +44,10 @@ const styles = StyleSheet.create({
         fontSize: 20,
         height: 22,
         color: 'white',
+    },
+    FAB: {
+        bottom:0,
+        right: 0,
     },
 });
 

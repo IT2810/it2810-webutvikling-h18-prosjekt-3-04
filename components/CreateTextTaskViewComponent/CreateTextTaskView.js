@@ -5,6 +5,7 @@ import DateTimePicker from 'react-native-modal-datetime-picker';
 
 
 export default class CreateTextTaskView extends React.Component {
+
     state = {
         isDateTimePickerVisible: false,
     };
