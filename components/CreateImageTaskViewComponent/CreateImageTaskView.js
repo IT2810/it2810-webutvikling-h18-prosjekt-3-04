@@ -14,7 +14,7 @@ export default class CreateImageTaskView extends React.Component {
         this.pickImage = this.pickImage.bind(this);
         this.pickCameraImage = this.pickCameraImage.bind(this);
         this._toggleModal = this._toggleModal.bind(this);
-        this.updateImage = this.updateImage.bind(this);
+        this._updateImage = this._updateImage.bind(this);
         this.state = {
             isModalVisible: false,
             currentTask: {
@@ -39,36 +39,36 @@ export default class CreateImageTaskView extends React.Component {
     };
 
     async pickImage() {
-        /*const status = await RequestPermission('cameraRoll');
+        const status = await RequestPermission('cameraRoll');
 
         if (!status) {
             return;
-        }*/
+        }
 
         const result = await ImagePicker.launchImageLibraryAsync({
            allowsEditing: true,
             base64: true,
         });
 
-        this.updateImage(result);
+        this._updateImage(result);
     }
 
     async pickCameraImage() {
-        /*const status = await RequestPermission('camera');
+        const status = await RequestPermission('camera');
 
         if (!status) {
             return;
-        }*/
+        }
 
         const result = await ImagePicker.launchCameraAsync({
             allowsEditing: true,
             base64: true,
         });
 
-        this.updateImage(result);
+        this._updateImage(result);
     }
 
-    updateImage(result) {
+    _updateImage(result) {
         if (result["cancelled"]) {
             return;
         }
@@ -90,8 +90,7 @@ export default class CreateImageTaskView extends React.Component {
         if (this.state.currentTask.image64 !== null) {
             imageView = <Image style={styles.image} source={{uri: 'data:image/png;base64,' + this.state.currentTask.image64}}/>;
         } else {
-            imageView =
-                <View style={styles.image}><Text style={styles.text}>+</Text></View>;
+            imageView = <View style={styles.image}><Text style={styles.text}>+</Text></View>;
         }
 
         return (
