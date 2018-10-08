@@ -1,8 +1,7 @@
 import React from 'react';
-import { StyleSheet, Text, View, ScrollView} from 'react-native';
+import { StyleSheet, Text,SafeAreaView, View, ScrollView} from 'react-native';
 import styles from './styles/styles';
 import FABComponent from '../../components/FABComponent/FABComponent.js';
-import CheckBoxComponent from '../CheckboxComponent/CheckboxComponent';
 import TaskContainerComponent from '../TaskContainerComponent/TaskContainerComponent';
 
 export default class HomeView extends React.Component {
@@ -22,12 +21,19 @@ export default class HomeView extends React.Component {
 
     render() {
         return (
+            <SafeAreaView style={{flex: 1, backgroundColor: '#f9f9f9'}}>
+            <View style={styles.viewWrapper}>
                 <ScrollView contentContainerStyle={styles.container}>
                     <TaskContainerComponent type='image' />
+                    <TaskContainerComponent type ='text' data='heyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyhey'/>
+                    <TaskContainerComponent type ='text' data='heyhey'/>
+                    <TaskContainerComponent type ='text' data='heyhey'/>
                     <TaskContainerComponent type ='text' data='heyhey'/>
                     <TaskContainerComponent type ='text' data='hei ol'/>
-                    <FABComponent navigation={this.props.navigation}/>
                 </ScrollView>
+                <FABComponent navigation={this.props.navigation}/>
+            </View>
+            </SafeAreaView>
         );
     }
 }

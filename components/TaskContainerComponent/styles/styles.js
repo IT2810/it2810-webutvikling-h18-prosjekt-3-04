@@ -25,19 +25,24 @@ export default StyleSheet.create({
         width: 200,
         alignSelf: "center",
     },
+    taskText:{
+        fontSize:20,
+        fontWeight: '500',
+    },
     checkFlex:{
         width:40,
-        alignSelf: "center",
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'flex-end'
     },
     dateStyle:{
-        marginTop:40,
+        marginTop:10,
         color: "#FF0040",
-        textAlign:"center",
-        justifyContent: "center",
     },
     image:{
         width:200,
         aspectRatio:1,
+        marginLeft:-10,
         alignSelf: "center",
     }
 
