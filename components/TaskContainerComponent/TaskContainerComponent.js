@@ -25,17 +25,23 @@ export default class TaskContainerComponent extends Component{
 
     render(){
         return (
-            <TouchableHighlight underlayColor={"rgba(0,0,0,0)"} onPress = { this.onPress }>
+            <TouchableHighlight underlayColor={"rgba(0,0,0,0)"} onPress = { this.onPress } >
+                {this.props.type === "motivational" ? <View style={styles.motivationalElement}>
+
+                        <Text style={styles.motivationalText}>{this.props.data}</Text>}
+                    </View> :
                     <View style={styles.taskObject}>
                         <View style={styles.textFlex}>
                             {this.props.type === "image" ? <Image style={styles.image} source={require("../../assets/icon.png")}/>
-                                    : <Text>{this.props.data}</Text>}
+                                : <Text style={styles.taskText}>{this.props.data}</Text>}
+                            <Text style={styles.dateStyle}>Deadline: 04.20.69</Text>
                         </View>
                         <View style={styles.checkFlex}>
                             <CheckboxComponent checked={this.state.checked} onPress={this.onPress}/>
                         </View>
-                        <Text style={styles.dateStyle}>04.20.69</Text>
                     </View>
+                }
+
             </TouchableHighlight>
         );
     }
