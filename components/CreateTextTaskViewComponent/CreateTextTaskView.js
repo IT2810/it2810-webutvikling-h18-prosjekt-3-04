@@ -19,6 +19,9 @@ export default class CreateTextTaskView extends React.Component {
 
     _handleDatePicked = (date) => {
         console.log('Deadline: ', date.toString().substring(0,16), 'at', date.toString().substring(16,21));
+        /*let deadlineString = ('Deadline: ', date.toString().substring(0,16), 'at', date.toString().substring(16,21));
+        this.props.deadlineText = deadlineString;*/
+
         this._hideDateTimePicker();
     };
     static navigationOptions = {
@@ -29,7 +32,7 @@ export default class CreateTextTaskView extends React.Component {
         headerTintColor: '#ff0042',
         headerTitleStyle: {
             color: '#ff0042',
-            fontSize: 20,
+            fontSize: 16,
             fontWeight: "bold",
         }
     };
@@ -58,8 +61,11 @@ export default class CreateTextTaskView extends React.Component {
                     timeZoneOffsetInMinutes={0}
                     mode={"datetime"}
                 />
+                <View style={styles.deadlineLabelView}>
+                    <Text style={styles.deadlineLabel}>{this.props.deadlineText}</Text>
+                </View>
                 <TouchableOpacity style={styles.createTaskButton} onPress={this.handleCreateTextTaskSubmit}>
-                    <Text style={styles.createTaskButtonText}>Create task</Text>
+                    <Text style={styles.createTaskButtonText}>Create task ✓</Text>
                 </TouchableOpacity>
             </View>
         );

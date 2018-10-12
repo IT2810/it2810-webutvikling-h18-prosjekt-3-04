@@ -6,12 +6,12 @@ export default StyleSheet.create({
     taskObject:{
         backgroundColor: "#FFF",
         borderRadius: 20,
-        width:width-20,
+        width:width-40,
         height:"auto",
         padding: 20,
         marginLeft:10,
         marginRight:10,
-        marginTop:5,
+        marginTop:10,
         marginBottom:0,
         flex: 0,
         flexDirection: 'row',
@@ -20,6 +20,7 @@ export default StyleSheet.create({
         shadowColor: 'black',
         shadowOpacity: 0.1,
         shadowOffset:{height: 2},
+        elevation:1,
     },
     textFlex:{
         width: 200,
@@ -48,8 +49,8 @@ export default StyleSheet.create({
     motivationalElement: {
         height:90,
         marginTop:15,
-        width:250,
-        marginLeft:-100,
+        width:width-40,
+
     },
     motivationalText: {
         fontSize: 16,

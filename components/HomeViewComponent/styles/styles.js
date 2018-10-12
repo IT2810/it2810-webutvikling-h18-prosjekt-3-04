@@ -9,6 +9,10 @@ export default StyleSheet.create({
         marginTop:10,
         paddingBottom:20,
     },
+    safeAreaView:{
+        flex: 1,
+        backgroundColor: '#f9f9f9'
+    },
     viewWrapper:{
         minHeight: '90%',
     },

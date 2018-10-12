@@ -27,6 +27,7 @@ export default class TaskContainerComponent extends Component{
         return (
             <TouchableHighlight underlayColor={"rgba(0,0,0,0)"} onPress = { this.onPress } >
                 {this.props.type === "motivational" ? <View style={styles.motivationalElement}>
+
                         <Text style={styles.motivationalText}>{this.props.data}</Text>}
                     </View> :
                     <View style={styles.taskObject}>

@@ -6,14 +6,14 @@ import TaskContainerComponent from '../TaskContainerComponent/TaskContainerCompo
 
 export default class HomeView extends React.Component {
     static navigationOptions = {
-        title: 'BIRD',
+        title: 'MOLTITASK',
         headerStyle: {
             backgroundColor: '#fff'
         },
         headerTitleStyle: {
             color: '#ff0042',
             letterSpacing: 5,
-            fontSize: 20,
+            fontSize: 18,
             fontWeight: "bold",
         }
     };
@@ -51,7 +51,7 @@ export default class HomeView extends React.Component {
 
         var randomIndex = Math.floor(Math.random() * (motivationalQuotes.length - 1));
         return (
-            <SafeAreaView style={{flex: 1, backgroundColor: '#f9f9f9'}}>
+            <SafeAreaView style={styles.safeAreaView}>
             <View style={styles.viewWrapper}>
                 <ScrollView contentContainerStyle={styles.container}>
                     <TaskContainerComponent type='image' />

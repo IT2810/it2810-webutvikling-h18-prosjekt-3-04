@@ -1,6 +1,8 @@
-import { StyleSheet } from 'react-native';
+import {Dimensions, StyleSheet} from 'react-native';
+let width = Dimensions.get('window').width; //full width
 
 export default StyleSheet.create({
+
     container: {
         flex: 1,
         backgroundColor: '#fff',
@@ -14,7 +16,7 @@ export default StyleSheet.create({
         fontWeight: "bold",
     },
     textInputField:{
-        height: 150,
+        height: 200,
         borderRadius: 15,
         borderWidth: 1,
         borderColor: '#f3f3f3',
@@ -23,7 +25,7 @@ export default StyleSheet.create({
         width: "90%",
         marginTop:20,
         marginBottom:20,
-        fontSize: 20,
+        fontSize: 17,
         fontWeight:"bold",
     },
     deadlineBtn: {
@@ -37,6 +39,9 @@ export default StyleSheet.create({
         shadowRadius: 3,
         elevation: 1,
         marginBottom: 150,
+        width:133,
+        alignSelf:'flex-end',
+        marginRight: '5%'
     },
     buttonText: {
         fontSize:15,
@@ -67,4 +72,12 @@ export default StyleSheet.create({
         fontWeight: "bold",
         color: '#fff',
     },
+    deadlineLabelView:{
+
+
+    },
+    deadlineLabel:{
+
+
+    }
 })
