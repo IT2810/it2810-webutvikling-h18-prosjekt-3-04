@@ -25,7 +25,7 @@ class FABComponent extends React.Component {
                 <ActionButton.Item
                     buttonColor="#cc0035"
                     title="New image task"
-                    onPress={() => this.toggleCreateTaskSubView()}>
+                    onPress={() => this.props.navigation.navigate('ImageTask')}>
                     <Icon name="md-image" style={styles.actionButtonIcon}/>
                 </ActionButton.Item>
                 <ActionButton.Item
