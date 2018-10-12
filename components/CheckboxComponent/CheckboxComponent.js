@@ -1,57 +1,26 @@
 import React, {Component} from 'react';
-import { View,Text,TouchableHighlight } from 'react-native'
+import { View,TouchableHighlight } from 'react-native'
 import styles from "./styles/styles";
 import { Ionicons } from '@expo/vector-icons';
-//import Icon from 'react-native-fa-icons';
-
+import PropTypes from 'prop-types';
 
 
 export default class CheckboxComponent extends Component{
 
-    /*
-    componentDidMount() {
-        Font.loadAsync({
-            'FontAwesome': require("../../assets/fonts/fa-solid-900.ttf"),
-        });
-    }
-    */
-
-
-    constructor() {
-        super();
-        this.state= {
-            checked: false,
-            checkIcon : ""
-        };
-    }
-
-    onPress = () => {
-        this.setState({
-            checked: !this.state.checked
-        });
-
-        if (this.state.checked){
-            this.state.checkIcon = <Ionicons name="md-checkmark-circle" size={32} color="green" />
-        } else {
-            this.state.checkIcon = ""
-        }
-
+    static propTypes = {
+        checked: PropTypes.bool,
+        onPress: PropTypes.func,
     };
 
-    render() {
-        return (
-            <TouchableHighlight
-                underlayColor={"rgba(0,0,0,0)"}
-                onPress = { this.onPress }
-            >
-                <View
-                    style={[this.state.checked ?  styles.checkboxStyleChecked : styles.checkboxStyle]}
-                >
-                    <Text
+    static defaultProps = {
+        checked: false
+    };
 
-                    >
-                        {this.state.checkIcon}
-                    </Text>
+    render(){
+        return (
+            <TouchableHighlight underlayColor={"rgba(0,0,0,0)"} onPress={this.props.onPress}>
+                <View style={styles.checkboxStyle}>
+                    {this.props.checked ? <Ionicons name="md-checkmark" size={35} color="#FF0040" /> : null}
                 </View>
             </TouchableHighlight>
         );
