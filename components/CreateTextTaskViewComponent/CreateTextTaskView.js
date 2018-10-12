@@ -5,7 +5,6 @@ import DateTimePicker from 'react-native-modal-datetime-picker';
 
 
 export default class CreateTextTaskView extends React.Component {
-
     state = {
         isDateTimePickerVisible: false,
     };
@@ -19,7 +18,7 @@ export default class CreateTextTaskView extends React.Component {
 
 
     _handleDatePicked = (date) => {
-        console.log('A date has been picked: ', date);
+        console.log('Deadline: ', date.toString().substring(0,16), 'at', date.toString().substring(16,21));
         this._hideDateTimePicker();
     };
     static navigationOptions = {
@@ -56,6 +55,7 @@ export default class CreateTextTaskView extends React.Component {
                     onConfirm={this._handleDatePicked}
                     onCancel={this._hideDateTimePicker}
                     is24Hour={true}
+                    timeZoneOffsetInMinutes={0}
                     mode={"datetime"}
                 />
                 <TouchableOpacity style={styles.createTaskButton} onPress={this.handleCreateTextTaskSubmit}>
