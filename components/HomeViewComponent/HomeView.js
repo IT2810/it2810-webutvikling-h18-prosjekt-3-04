@@ -1,9 +1,9 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { StyleSheet, Text, View, ScrollView } from 'react-native';
 import styles from './styles/styles'
 import FABComponent from '../../components/FABComponent/FABComponent.js'
-import CheckBoxComponent from '../CheckboxComponent/CheckboxComponent'
 import { AddInitialTodos, RetrieveTodos, Clear, AddTodo, RemoveTodo } from '../../util/AsyncStorage'
+import TaskContainerComponent from '../TaskContainerComponent/TaskContainerComponent'
 
 export default class HomeView extends React.Component {
 
@@ -29,38 +29,39 @@ export default class HomeView extends React.Component {
     async componentDidMount() {
         //await Clear();
         const todos = await RetrieveTodos();
-        //console.log(todos);
+        console.log(todos);
         this.setState({ todos: todos });
-        if (todos === null) {
-            await AddInitialTodos();
-        }
-        //let testobject = {test: 'Testing 123'};
-        //console.log(testobject);
-        //await RemoveTodo(2);
+
+        // Add listener to update feed when returning to home-screen
+        const didBlurSubscription = this.props.navigation.addListener(
+            'didFocus',
+            payload => {
+                this.componentDidMount();
+            }
+        );
+
     }
 
     createTodoCell = () => {
         if (this.state.todos !== null) {
             let array = JSON.parse(this.state.todos);
-            console.log(array[0].test);
+
             return array.map((item, key) => {
-                console.log(item);
                 return (
-                    <Text key={key}>{item.test}</Text>
+                    <TaskContainerComponent key={key} type={item.type} data={item.data} deadline={item.deadline}/>
                 );
             });
         }
-        return <Text>Looks like there's nothing here :)</Text>;
+        return <Text>Looks like there's nothing here :)</Text>
     };
 
     render() {
 
         return (
-            <View style={styles.container}>
-                { this.createTodoCell() }
-                <CheckBoxComponent/>
+            <ScrollView contentContainerStyle={styles.container}>
+                {this.createTodoCell()}
                 <FABComponent navigation={this.props.navigation}/>
-            </View>
+            </ScrollView>
         );
     }
 }
