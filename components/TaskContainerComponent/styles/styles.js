@@ -6,12 +6,12 @@ export default StyleSheet.create({
     taskObject:{
         backgroundColor: "#FFF",
         borderRadius: 20,
-        width:width-20,
+        width:width-40,
         height:"auto",
         padding: 20,
         marginLeft:10,
         marginRight:10,
-        marginTop:5,
+        marginTop:10,
         marginBottom:0,
         flex: 0,
         flexDirection: 'row',
@@ -20,25 +20,48 @@ export default StyleSheet.create({
         shadowColor: 'black',
         shadowOpacity: 0.1,
         shadowOffset:{height: 2},
+        elevation:1,
     },
     textFlex:{
         width: 200,
         alignSelf: "center",
     },
+    taskText:{
+        fontSize:20,
+        fontWeight: '500',
+    },
     checkFlex:{
         width:40,
-        alignSelf: "center",
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'flex-end'
     },
     dateStyle:{
-        marginTop:40,
+        marginTop:10,
         color: "#FF0040",
-        textAlign:"center",
-        justifyContent: "center",
     },
     image:{
-        width:200,
+        width:170,
         aspectRatio:1,
+        marginLeft:-30,
+        borderRadius: 10,
+        borderWidth: 2,
+        borderColor: '#f3f3f3',
         alignSelf: "center",
-    }
+    },
+    motivationalElement: {
+        height:90,
+        marginTop:15,
+        width:width-40,
 
+    },
+    motivationalText: {
+        fontSize: 16,
+        marginLeft:15,
+        marginTop:32,
+        color:'#bcbcbc',
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'flex-start',
+    }
 });

@@ -38,7 +38,7 @@ export async function AddTodo(todo) {
         if (todoString === null) { todos = JSON.parse('[]') }
         else { todos = JSON.parse(todoString); }
 
-        todos.push(todo);
+        todos.unshift(todo);
         await AsyncStorage.setItem('todos', JSON.stringify(todos));
     } catch (error) {
         alert(error);

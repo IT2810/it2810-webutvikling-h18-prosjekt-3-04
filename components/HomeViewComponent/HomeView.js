@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, SafeAreaView } from 'react-native';
 import styles from './styles/styles'
 import FABComponent from '../../components/FABComponent/FABComponent.js'
 import { AddInitialTodos, RetrieveTodos, Clear, AddTodo, RemoveTodo } from '../../util/AsyncStorage'
@@ -14,14 +14,14 @@ export default class HomeView extends React.Component {
     }
 
     static navigationOptions = {
-        title: 'BIRD',
+        title: 'MOLTITASK',
         headerStyle: {
             backgroundColor: '#fff'
         },
         headerTitleStyle: {
             color: '#ff0042',
             letterSpacing: 5,
-            fontSize: 20,
+            fontSize: 18,
             fontWeight: "bold",
         }
     };
@@ -56,12 +56,46 @@ export default class HomeView extends React.Component {
     };
 
     render() {
+        var motivationalQuotes = [
+            "Just do it!",
+            "You are doing great!",
+            "You are great!",
+            "You go girl!",
+            "Stay productive!",
+            "Go get ‘em!",
+            "Nice progression!",
+            "Achieve your goals!",
+            "You become great.",
+            "Move along.",
+            "How are you?",
+            "Andreas loves you!",
+            "Gotta catch 'em all!",
+            "Go go gadget!",
+            "Nothing is impossible.",
+            "Live in the present.",
+            "Apples are nice.",
+            "I like you.",
+            "Do you like me?",
+            "Run, Forrest!",
+            "Catch me if you can.",
+            "What are your goals?",
+            "Do you remember?",
+            "Have you done it yet?",
+            "Stop procrastinating!",
+            "Stay hydrated!"
+        ];
 
+        let randomIndex = Math.floor(Math.random() * (motivationalQuotes.length - 1));
         return (
-            <ScrollView contentContainerStyle={styles.container}>
-                {this.createTodoCell()}
-                <FABComponent navigation={this.props.navigation}/>
-            </ScrollView>
+            <SafeAreaView style={styles.safeAreaView}>
+                <View style={styles.viewWrapper}>
+                    <ScrollView contentContainerStyle={styles.container}>
+                        {this.createTodoCell()}
+                        <TaskContainerComponent type ='motivational' data= {motivationalQuotes[randomIndex]}/>
+                    </ScrollView>
+                    <FABComponent navigation={this.props.navigation}/>
+                </View>
+            </SafeAreaView>
         );
     }
 }
