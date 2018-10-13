@@ -1,10 +1,18 @@
 import React from 'react';
-import { StyleSheet, Text,SafeAreaView, View, ScrollView} from 'react-native';
-import styles from './styles/styles';
-import FABComponent from '../../components/FABComponent/FABComponent.js';
-import TaskContainerComponent from '../TaskContainerComponent/TaskContainerComponent';
+import { StyleSheet, Text, View, ScrollView, SafeAreaView } from 'react-native';
+import styles from './styles/styles'
+import FABComponent from '../../components/FABComponent/FABComponent.js'
+import { AddInitialTodos, RetrieveTodos, Clear, AddTodo, RemoveTodo } from '../../util/AsyncStorage'
+import TaskContainerComponent from '../TaskContainerComponent/TaskContainerComponent'
 
 export default class HomeView extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.createTodoCell = this.createTodoCell.bind(this);
+        this.state = { todos: null } ;
+    }
+
     static navigationOptions = {
         title: 'MOLTITASK',
         headerStyle: {
@@ -16,6 +24,35 @@ export default class HomeView extends React.Component {
             fontSize: 18,
             fontWeight: "bold",
         }
+    };
+
+    async componentDidMount() {
+        //await Clear();
+        const todos = await RetrieveTodos();
+        console.log(todos);
+        this.setState({ todos: todos });
+
+        // Add listener to update feed when returning to home-screen
+        const didBlurSubscription = this.props.navigation.addListener(
+            'didFocus',
+            payload => {
+                this.componentDidMount();
+            }
+        );
+
+    }
+
+    createTodoCell = () => {
+        if (this.state.todos !== null) {
+            let array = JSON.parse(this.state.todos);
+
+            return array.map((item, key) => {
+                return (
+                    <TaskContainerComponent key={key} type={item.type} data={item.data} deadline={item.deadline}/>
+                );
+            });
+        }
+        return <Text>Looks like there's nothing here :)</Text>
     };
 
     render() {
@@ -39,7 +76,6 @@ export default class HomeView extends React.Component {
             "Apples are nice.",
             "I like you.",
             "Do you like me?",
-            "Kan jeg bomme en snus?",
             "Run, Forrest!",
             "Catch me if you can.",
             "What are your goals?",
@@ -49,21 +85,16 @@ export default class HomeView extends React.Component {
             "Stay hydrated!"
         ];
 
-        var randomIndex = Math.floor(Math.random() * (motivationalQuotes.length - 1));
+        let randomIndex = Math.floor(Math.random() * (motivationalQuotes.length - 1));
         return (
             <SafeAreaView style={styles.safeAreaView}>
-            <View style={styles.viewWrapper}>
-                <ScrollView contentContainerStyle={styles.container}>
-                    <TaskContainerComponent type='image' />
-                    <TaskContainerComponent type ='text' data='heyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyheyhey'/>
-                    <TaskContainerComponent type ='text' data='heyhey'/>
-                    <TaskContainerComponent type ='text' data='heyhey'/>
-                    <TaskContainerComponent type ='text' data='heyhey'/>
-                    <TaskContainerComponent type ='text' data='hei ol'/>
-                    <TaskContainerComponent type ='motivational' data= {motivationalQuotes[randomIndex]}/>
-                </ScrollView>
-                <FABComponent navigation={this.props.navigation}/>
-            </View>
+                <View style={styles.viewWrapper}>
+                    <ScrollView contentContainerStyle={styles.container}>
+                        {this.createTodoCell()}
+                        <TaskContainerComponent type ='motivational' data= {motivationalQuotes[randomIndex]}/>
+                    </ScrollView>
+                    <FABComponent navigation={this.props.navigation}/>
+                </View>
             </SafeAreaView>
         );
     }

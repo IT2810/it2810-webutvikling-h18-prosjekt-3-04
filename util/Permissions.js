@@ -15,8 +15,9 @@ let permissionMap = {
  */
 
 export async function RequestPermission(permission) {
-    const { response } = await Permissions.askAsync(permissionMap[permission]);
-    if (response !== 'granted') {
+    const response = await Permissions.askAsync(permissionMap[permission]);
+    //console.log(response);
+    if (response['status'] !== 'granted') {
         alert('Permission ' + permission + ' not granted. Permissions can be changed in settings');
         return false;
     }

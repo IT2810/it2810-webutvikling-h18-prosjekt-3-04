@@ -41,9 +41,12 @@ export default StyleSheet.create({
         color: "#FF0040",
     },
     image:{
-        width:200,
+        width:170,
         aspectRatio:1,
-        marginLeft:-10,
+        marginLeft:-30,
+        borderRadius: 10,
+        borderWidth: 2,
+        borderColor: '#f3f3f3',
         alignSelf: "center",
     },
     motivationalElement: {

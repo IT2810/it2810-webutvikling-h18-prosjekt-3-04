@@ -2,13 +2,33 @@ import React from 'react';
 import { TouchableOpacity, Text,TextInput,Keyboard , View } from 'react-native';
 import styles from './styles/styles'
 import DateTimePicker from 'react-native-modal-datetime-picker';
+import {AddTodo} from "../../util/AsyncStorage";
 
 
 export default class CreateTextTaskView extends React.Component {
-    state = {
-        isDateTimePickerVisible: false,
-    };
-    handleCreateTextTaskSubmit(){
+
+    constructor(props) {
+        super(props);
+        this.handleCreateTextTaskSubmit = this.handleCreateTextTaskSubmit.bind(this);
+        this.state = {
+            isDateTimePickerVisible: false,
+            currentTask: {
+                type: 'text',
+                data: null,
+                deadline: 'No deadline',
+            }
+        };
+    }
+
+    async handleCreateTextTaskSubmit(){
+        let test = {
+            deadline: this.state.currentTask.deadline,
+            type: this.state.currentTask.type,
+            data: this.state.currentTask.data,
+        };
+
+        await AddTodo(test);
+        this.props.navigation.navigate('Home');
 
     }
     _showDateTimePicker = () => this.setState({ isDateTimePickerVisible: true });
@@ -18,12 +38,16 @@ export default class CreateTextTaskView extends React.Component {
 
 
     _handleDatePicked = (date) => {
-        console.log('Deadline: ', date.toString().substring(0,16), 'at', date.toString().substring(16,21));
+        let deadlineString = date.toString().substring(0,16) + 'at ' + date.toString().substring(16,21);
+        console.log('Deadline: ' + deadlineString);
         /*let deadlineString = ('Deadline: ', date.toString().substring(0,16), 'at', date.toString().substring(16,21));
         this.props.deadlineText = deadlineString;*/
-
+        let tempTask = this.state.currentTask;
+        tempTask.deadline = deadlineString;
+        this.setState({ currentTask: tempTask });
         this._hideDateTimePicker();
     };
+
     static navigationOptions = {
         title: 'Create Text Task',
         headerStyle: {
@@ -37,6 +61,12 @@ export default class CreateTextTaskView extends React.Component {
         }
     };
 
+    _updateText(text) {
+        let tempTask = this.state.currentTask;
+        tempTask.data = text;
+        this.setState({ currentTask: tempTask });
+    }
+
     render() {
         return (
             <View style={styles.container}>
@@ -47,6 +77,7 @@ export default class CreateTextTaskView extends React.Component {
                     multiline={true}
                     returnKeyType={"done"}
                     enablesReturnKeyAutomatically={true}
+                    onChangeText={(text) => this._updateText(text)}
                     blurOnSubmit={true}
                     onSubmitEditing={Keyboard.dismiss}
                 />

@@ -10,7 +10,6 @@ export default StyleSheet.create({
     },
 
     image: {
-        marginTop: 20,
         borderColor: '#d6d6d6',
         borderWidth: 2,
         borderRadius: 10,
@@ -23,8 +22,9 @@ export default StyleSheet.create({
     },
 
     imageContainer: {
+        marginTop: 20,
         width: '80%',
-        height: '40%',
+        aspectRatio: 1,
         alignItems: 'center',
     },
 
@@ -45,5 +45,32 @@ export default StyleSheet.create({
         borderRadius: 10,
         margin: 1,
         width: '100%',
-    }
+    },
+
+    deadlineBtn: {
+        backgroundColor: '#a3052e',
+        borderRadius:20,
+        borderWidth: 1,
+        borderColor:'#a3052e',
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 3 },
+        shadowOpacity: 0.2,
+        shadowRadius: 3,
+    },
+
+    buttonText: {
+        fontSize:15,
+        fontWeight: "bold",
+        color: '#fff',
+    },
+
+    createTaskButton: {
+        backgroundColor: '#ff0042',
+    },
+
+    createTaskButtonText: {
+        fontSize:15,
+        fontWeight: "bold",
+        color: '#fff',
+    },
 })
