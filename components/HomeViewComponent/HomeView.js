@@ -1,35 +1,55 @@
 import React from 'react';
-import { StyleSheet, Text, View, ScrollView, SafeAreaView } from 'react-native';
+import {Text, View, ScrollView, SafeAreaView, TouchableHighlight} from 'react-native';
 import styles from './styles/styles'
 import FABComponent from '../../components/FABComponent/FABComponent.js'
 import { AddInitialTodos, RetrieveTodos, Clear, AddTodo, RemoveTodo } from '../../util/AsyncStorage'
 import TaskContainerComponent from '../TaskContainerComponent/TaskContainerComponent'
+import {Ionicons} from "@expo/vector-icons";
 
 export default class HomeView extends React.Component {
-
     constructor(props) {
         super(props);
         this.createTodoCell = this.createTodoCell.bind(this);
-        this.state = { todos: null } ;
+        this.state = {todos: null};
     }
+    componentWillMount() {
+        this.props.navigation.setParams({ handleIconTouch:
+            this.handleIconTouch });
 
-    static navigationOptions = {
-        title: 'MOLTITASK',
+    }
+    handleIconTouch = () => {
+        let test = JSON.parse(this.state.todos);
+        for (let item in test) {
+            if(test[item].isChecked) {
+                 /*Todo: DELETE TASK*/
+
+            }
+        }
+    };
+     static navigationOptions = ({navigation})=>({
+        title: 'BUTLER',
         headerStyle: {
-            backgroundColor: '#fff'
+            backgroundColor: '#fff',
         },
         headerTitleStyle: {
-            color: '#ff0042',
+            color: '#ff0040',
             letterSpacing: 5,
             fontSize: 18,
             fontWeight: "bold",
-        }
-    };
-
+        },
+        rightButtonTitle: 'HEI',
+        headerRight:
+            <TouchableHighlight underlayColor={"rgba(0,0,0,0)"} style={styles.rightButtonItem} activeOpacity={0.5} onPress={()=> navigation.state.params.handleIconTouch()}>
+                <View style={styles.iconView}>
+                    <Ionicons  name="md-trash" size={25} color="#ff0042" />
+                </View>
+            </TouchableHighlight>,
+    });
+    /*onPressDeleteTask={this.deleteTasks}*/
     async componentDidMount() {
+
         //await Clear();
         const todos = await RetrieveTodos();
-        console.log(todos);
         this.setState({ todos: todos });
 
         // Add listener to update feed when returning to home-screen
@@ -45,10 +65,9 @@ export default class HomeView extends React.Component {
     createTodoCell = () => {
         if (this.state.todos !== null) {
             let array = JSON.parse(this.state.todos);
-
             return array.map((item, key) => {
                 return (
-                    <TaskContainerComponent key={key} type={item.type} data={item.data} deadline={item.deadline}/>
+                    <TaskContainerComponent key={key} type={item.type} isChecked={item.checked} data={item.data} deadline={item.deadline}/>
                 );
             });
         }
@@ -93,9 +112,11 @@ export default class HomeView extends React.Component {
                         {this.createTodoCell()}
                         <TaskContainerComponent type ='motivational' data= {motivationalQuotes[randomIndex]}/>
                     </ScrollView>
-                    <FABComponent navigation={this.props.navigation}/>
                 </View>
+                <FABComponent navigation={this.props.navigation}/>
             </SafeAreaView>
         );
     }
+
+
 }

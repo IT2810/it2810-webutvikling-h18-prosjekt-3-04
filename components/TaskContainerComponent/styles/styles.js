@@ -27,8 +27,8 @@ export default StyleSheet.create({
         alignSelf: "center",
     },
     taskText:{
-        fontSize:20,
-        fontWeight: '500',
+        fontSize:17,
+        fontWeight: 'bold',
     },
     checkFlex:{
         width:40,
