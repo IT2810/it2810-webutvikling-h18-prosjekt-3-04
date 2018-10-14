@@ -19,16 +19,17 @@ export default class HomeView extends React.Component {
         };
     }
 
-    componentDidMount() {
-        this._subscribe();
-    }
-
     componentWillUnmount() {
         this._unsubscribe();
     }
 
     _subscribe = () => {
         this._subscription = Pedometer.watchStepCount(result => {
+
+            let todos = JSON.parse(this.state.todos);
+
+
+
             this.setState({
                 currentStepCount: result.steps
             });
@@ -58,12 +59,14 @@ export default class HomeView extends React.Component {
             this.handleIconTouch });
 
     }
+
     handleIconTouch = (title, message) => {
         Alert.alert(title, message, [
             {text: 'Cancel', onPress: () => console.log('Cancel Pressed'), style: 'cancel'},
             {text: 'Yes please', onPress: () => this.deleteSelectedTasks()},
         ])
     };
+
     deleteSelectedTasks = () =>{
         let test = JSON.parse(this.state.todos);
         for (let item in test) {
@@ -90,8 +93,9 @@ export default class HomeView extends React.Component {
                 </View>
             </TouchableHighlight>,
     });
-    /*onPressDeleteTask={this.deleteTasks}*/
+
     async componentDidMount() {
+        this._subscribe();
 
         //await Clear();
         const todos = await RetrieveTodos();
@@ -114,7 +118,7 @@ export default class HomeView extends React.Component {
                 if (item.type === 'steps'){
                     let steps = this.state.currentStepCount;
                     return (
-                        <TaskContainerComponent key={key} type={item.type} isChecked={item.checked} data={item.data} steps={steps} deadline={item.deadline}/>
+                        <TaskContainerComponent key={key} type={item.type} isChecked={item.checked} data={steps + '/' + item.data} deadline={item.deadline}/>
                     );
                 }
                 return (

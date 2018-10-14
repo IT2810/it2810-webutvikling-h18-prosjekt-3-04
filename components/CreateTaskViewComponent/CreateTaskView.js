@@ -20,6 +20,7 @@ export default class CreateTaskView extends React.Component {
         this._toggleModal = this._toggleModal.bind(this);
         this._postTask = this._postTask.bind(this);
         this._updateText = this._updateText.bind(this);
+        this._updateStepsText = this._updateStepsText.bind(this);
         this._toggleDatePicker = this._toggleDatePicker.bind(this);
         this._handleDatePicked = this._handleDatePicked.bind(this);
         this.state = {
@@ -79,6 +80,12 @@ export default class CreateTaskView extends React.Component {
     _updateText(text) {
         let tempTask = this.state.currentTask;
         tempTask.data = text;
+        this.setState({ currentTask: tempTask });
+    }
+
+    _updateStepsText(text) {
+        let tempTask = this.state.currentTask;
+        tempTask.data = '0/' + text;
         this.setState({ currentTask: tempTask });
     }
 
@@ -149,7 +156,7 @@ export default class CreateTaskView extends React.Component {
             return <ChooseTextComponent updateText={this._updateText}/>;
         }
         else{
-            return <ChooseStepCounterComponent updateStepsText={this._updateText}/>;
+            return <ChooseStepCounterComponent updateStepsText={this._updateStepsText}/>;
         }
     }
 

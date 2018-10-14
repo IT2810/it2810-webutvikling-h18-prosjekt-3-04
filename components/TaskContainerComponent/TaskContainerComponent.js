@@ -15,6 +15,7 @@ export default class TaskContainerComponent extends Component{
         };
 
     }
+
     static propTypes = {
         type: PropTypes.string,
         data: PropTypes.string,
@@ -23,16 +24,19 @@ export default class TaskContainerComponent extends Component{
         isChecked: PropTypes.bool,
         steps: PropTypes.number,
     };
+
     onPress = () => {
         this.setState({ checked: !this.state.checked });
         this.props.isChecked = this.state.checked;
     };
+
     renderTaskObject(){
         if (this.props.type === "image"){
            return <Image style={styles.image} source={{uri: 'data:image/jpeg;base64,' + this.props.data}}/>
         }
         else if (this.props.type === "steps"){
-            return <Text style={styles.taskText}>🏃🏻‍♂️ {this.props.data}</Text>
+            let data = this.props.data.split('/');
+            return <Text style={styles.taskText}>🏃🏻‍♂️ {parseInt(data[0]) + parseInt(data[1])} of {data[2]} steps</Text>
         }
         else {
            return <Text style={styles.taskText}>{this.props.data}</Text>
