@@ -32,7 +32,7 @@ export default class TaskContainerComponent extends Component{
                     </View> :
                     <View style={styles.taskObject}>
                         <View style={styles.textFlex}>
-                            {this.props.type === "image" ? <Image style={styles.image} source={{uri: 'data:image/png;base64,' + this.props.data}}/>
+                            {this.props.type === "image" ? <Image style={styles.image} source={{uri: 'data:image/jpeg;base64,' + this.props.data}}/>
                                     : <Text>{this.props.data}</Text>}
                             <Text style={styles.dateStyle}>{this.props.deadline}</Text>
                         </View>

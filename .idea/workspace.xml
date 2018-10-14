@@ -2,18 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ed6ac24-427d-4903-9480-87725bf3ff55" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/components/ChooseImageComponent/ChooseImageComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ChooseImageComponent/styles/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ChooseTextComponent/ChooseTextComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ChooseTextComponent/styles/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/CreateTaskViewComponent/CreateTaskView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UploadImageModalComponent/UploadImageModalComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UploadImageModalComponent/styles/styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CheckboxComponent/CheckboxComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/CheckboxComponent/CheckboxComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CheckboxComponent/styles/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/CheckboxComponent/styles/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CreateTextTaskViewComponent/CreateTextTaskView.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/CreateTextTaskViewComponent/CreateTextTaskView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CreateTextTaskViewComponent/styles/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/CreateTextTaskViewComponent/styles/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/CreateImageTaskViewComponent/CreateImageTaskView.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/CreateImageTaskViewComponent/styles/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/CreateTextTaskViewComponent/CreateTextTaskView.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/CreateTextTaskViewComponent/styles/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/CreateTaskViewComponent/styles/styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/FABComponent/FABComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/FABComponent/FABComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/HomeViewComponent/HomeView.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/HomeViewComponent/HomeView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/HomeViewComponent/styles/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/HomeViewComponent/styles/styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/TaskContainerComponent/TaskContainerComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/TaskContainerComponent/TaskContainerComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/TaskContainerComponent/styles/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/TaskContainerComponent/styles/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/AsyncStorage.js" beforeDir="false" afterPath="$PROJECT_DIR$/util/AsyncStorage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/Permissions.js" beforeDir="false" afterPath="$PROJECT_DIR$/util/Permissions.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,22 +29,22 @@
     <session id="256324037">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="380" />
+          <entry key="js" value="2170" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="380" />
+          <entry key="JavaScript" value="2170" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="js" value="7" />
+          <entry key="js" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JavaScript" value="7" />
+          <entry key="JavaScript" value="23" />
         </counts>
       </usages-collector>
     </session>
@@ -56,10 +61,43 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/CreateTaskViewComponent/CreateTaskView.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="547">
+              <caret line="153" lean-forward="true" selection-start-line="153" selection-end-line="153" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/CreateTaskViewComponent/styles/styles.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="646">
+              <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/HomeViewComponent/HomeView.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="257">
+              <caret line="48" column="45" lean-forward="true" selection-start-line="48" selection-start-column="45" selection-end-line="48" selection-end-column="45" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/components/TaskContainerComponent/TaskContainerComponent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="27" column="16" lean-forward="true" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+            <state relative-caret-position="506">
+              <caret line="32" column="52" lean-forward="true" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -68,37 +106,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/TaskContainerComponent/styles/styles.js">
+        <entry file="file://$PROJECT_DIR$/util/Permissions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="47" column="23" lean-forward="true" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#42#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/HomeViewComponent/HomeView.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="70" column="33" lean-forward="true" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/CreateTextTaskViewComponent/CreateTextTaskView.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="29" column="28" lean-forward="true" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="374">
+              <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -106,17 +117,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/util/AsyncStorage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+            <state relative-caret-position="799">
+              <caret line="47" column="41" lean-forward="true" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/components/CreateImageTaskViewComponent/CreateImageTaskView.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/FABComponent/FABComponent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="807">
-              <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
+            <state relative-caret-position="510">
+              <caret line="31" column="41" lean-forward="true" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -127,8 +138,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+            <state relative-caret-position="221">
+              <caret line="13" column="47" lean-forward="true" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -157,20 +168,28 @@
         <option value="$PROJECT_DIR$/components/header/Header.js" />
         <option value="$PROJECT_DIR$/components/Navigator/Navigator.js" />
         <option value="$PROJECT_DIR$/components/CreateTextTaskViewComponent/styles/styles.js" />
-        <option value="$PROJECT_DIR$/components/FABComponent/FABComponent.js" />
-        <option value="$PROJECT_DIR$/App.js" />
-        <option value="$PROJECT_DIR$/util/Permissions.js" />
         <option value="$PROJECT_DIR$/components/CreateImageTaskViewComponent/styles/styles.js" />
-        <option value="$PROJECT_DIR$/components/CreateImageTaskViewComponent/CreateImageTaskView.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/components/CheckboxComponent/CheckboxComponent.js" />
-        <option value="$PROJECT_DIR$/components/HomeViewComponent/HomeView.js" />
         <option value="$PROJECT_DIR$/components/CheckboxComponent/styles/styles.js" />
         <option value="$PROJECT_DIR$/components/HomeViewComponent/styles/styles.js" />
-        <option value="$PROJECT_DIR$/components/TaskContainerComponent/TaskContainerComponent.js" />
         <option value="$PROJECT_DIR$/components/TaskContainerComponent/styles/styles.js" />
-        <option value="$PROJECT_DIR$/components/CreateTextTaskViewComponent/CreateTextTaskView.js" />
+        <option value="$PROJECT_DIR$/components/ChooseImageComponent/styles/styles.js" />
+        <option value="$PROJECT_DIR$/components/ChooseImageComponent/ChooseImageComponent.js" />
+        <option value="$PROJECT_DIR$/components/UploadImageModalComponent/styles/styles.js" />
+        <option value="$PROJECT_DIR$/components/UploadImageModalComponent/UploadImageModalComponent.js" />
+        <option value="$PROJECT_DIR$/components/CreateImageTaskViewComponent/CreateImageTaskView.js" />
+        <option value="$PROJECT_DIR$/components/ChooseTextComponent/ChooseTextComponent.js" />
         <option value="$PROJECT_DIR$/util/AsyncStorage.js" />
+        <option value="$PROJECT_DIR$/components/FABComponent/FABComponent.js" />
+        <option value="$PROJECT_DIR$/components/ChooseTextComponent/styles/styles.js" />
+        <option value="$PROJECT_DIR$/components/CreateTextTaskViewComponent/CreateTextTaskView.js" />
+        <option value="$PROJECT_DIR$/App.js" />
+        <option value="$PROJECT_DIR$/util/Permissions.js" />
+        <option value="$PROJECT_DIR$/components/CreateTaskViewComponent/styles/styles.js" />
+        <option value="$PROJECT_DIR$/components/CreateTaskViewComponent/CreateTaskView.js" />
+        <option value="$PROJECT_DIR$/components/HomeViewComponent/HomeView.js" />
+        <option value="$PROJECT_DIR$/components/TaskContainerComponent/TaskContainerComponent.js" />
       </list>
     </option>
   </component>
@@ -212,7 +231,7 @@
               <item name="it2810-webutvikling-h18-prosjekt-3-04" type="b2602c69:ProjectViewProjectNode" />
               <item name="it2810-webutvikling-h18-prosjekt-3-04" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="CreateTextTaskViewComponent" type="462c0819:PsiDirectoryNode" />
+              <item name="CreateTaskViewComponent" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="it2810-webutvikling-h18-prosjekt-3-04" type="b2602c69:ProjectViewProjectNode" />
@@ -255,20 +274,14 @@
               <item name="it2810-webutvikling-h18-prosjekt-3-04" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="CheckboxComponent" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="CreateTaskViewComponent" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="it2810-webutvikling-h18-prosjekt-3-04" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="CheckboxComponent" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="CreateTaskViewComponent" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="styles" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="it2810-webutvikling-h18-prosjekt-3-04" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="CreateImageTaskViewComponent" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="it2810-webutvikling-h18-prosjekt-3-04" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
@@ -280,21 +293,7 @@
               <item name="it2810-webutvikling-h18-prosjekt-3-04" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="HomeViewComponent" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="styles" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="it2810-webutvikling-h18-prosjekt-3-04" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="TaskContainerComponent" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="it2810-webutvikling-h18-prosjekt-3-04" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="TaskContainerComponent" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="styles" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="it2810-webutvikling-h18-prosjekt-3-04" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
@@ -346,12 +345,12 @@
       <updated>1538384259450</updated>
       <workItem from="1538384260776" duration="4356000" />
       <workItem from="1539263640456" duration="908000" />
-      <workItem from="1539279278588" duration="23299000" />
+      <workItem from="1539279278588" duration="40453000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5928000" />
+    <option name="totallyTimeSpent" value="23082000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -427,16 +426,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/HomeViewComponent/HomeView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="70" column="33" lean-forward="true" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/TaskContainerComponent/styles/styles.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
@@ -447,20 +436,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/TaskContainerComponent/TaskContainerComponent.js">
+    <entry file="file://$PROJECT_DIR$/components/ChooseImageComponent/styles/styles.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="27" column="16" lean-forward="true" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/ChooseImageComponent/ChooseImageComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#65#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/CreateTextTaskViewComponent/CreateTextTaskView.js">
+    <entry file="file://$PROJECT_DIR$/components/CreateImageTaskViewComponent/styles/styles.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="29" column="28" lean-forward="true" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+        <state relative-caret-position="493">
+          <caret line="29" lean-forward="true" selection-end-line="75" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/UploadImageModalComponent/UploadImageModalComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/UploadImageModalComponent/styles/styles.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="2" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/CreateImageTaskViewComponent/CreateImageTaskView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="129" column="53" lean-forward="true" selection-start-line="125" selection-start-column="16" selection-end-line="129" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/ChooseTextComponent/ChooseTextComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/ChooseTextComponent/styles/styles.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/FABComponent/FABComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="31" column="41" lean-forward="true" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="47" lean-forward="true" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/CreateTaskViewComponent/CreateTaskView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="153" lean-forward="true" selection-start-line="153" selection-end-line="153" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -469,17 +536,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/util/AsyncStorage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="799">
+          <caret line="47" column="41" lean-forward="true" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/CreateImageTaskViewComponent/CreateImageTaskView.js">
+    <entry file="file://$PROJECT_DIR$/util/Permissions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="807">
-          <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
+        <state relative-caret-position="374">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/CreateTaskViewComponent/styles/styles.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/HomeViewComponent/HomeView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="48" column="45" lean-forward="true" selection-start-line="48" selection-start-column="45" selection-end-line="48" selection-end-column="45" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/TaskContainerComponent/TaskContainerComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="32" column="52" lean-forward="true" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
