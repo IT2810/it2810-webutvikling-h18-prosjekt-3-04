@@ -30,6 +30,14 @@ export async function RetrieveTodos() {
     }
 }
 
+export async function StoreTodos(todos) {
+    try {
+        await AsyncStorage.setItem('todos', JSON.stringify(todos));
+    } catch (error) {
+        alert(error);
+    }
+}
+
 export async function AddTodo(todo) {
     try {
         const todoString = await RetrieveTodos();
@@ -50,7 +58,6 @@ export async function RemoveTodo(index) {
         const todoString = await RetrieveTodos();
         let todos = JSON.parse(todoString);
         todos.splice(index, 1);
-        //console.log(todos);
         await AsyncStorage.setItem('todos', JSON.stringify(todos));
     } catch (error) {
         alert(error);

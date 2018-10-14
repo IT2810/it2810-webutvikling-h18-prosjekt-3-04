@@ -7,15 +7,6 @@ import PropTypes from 'prop-types';
 
 export default class TaskContainerComponent extends Component{
 
-    constructor() {
-        super();
-        this.onPress = this.onPress.bind(this);
-        this.state= {
-            checked: false,
-        };
-
-    }
-
     static propTypes = {
         type: PropTypes.string,
         data: PropTypes.string,
@@ -23,12 +14,9 @@ export default class TaskContainerComponent extends Component{
         onPress: PropTypes.func,
         isChecked: PropTypes.bool,
         steps: PropTypes.number,
+        id: PropTypes.number,
     };
 
-    onPress = () => {
-        this.setState({ checked: !this.state.checked });
-        this.props.isChecked = this.state.checked;
-    };
 
     renderTaskObject(){
         if (this.props.type === "image"){
@@ -45,20 +33,16 @@ export default class TaskContainerComponent extends Component{
 
     render(){
         return (
-                <TouchableHighlight underlayColor={"rgba(0,0,0,0)"} onPress={this.onPress}>
-                    {this.props.type === "motivational" ? <View style={styles.motivationalElement}>
-                            <Text style={styles.motivationalText}>{this.props.data}</Text>
-                        </View> :
-                        <View style={styles.taskObject}>
-                            <View style={styles.textFlex}>
-                                {this.renderTaskObject()}
-                                <Text style={styles.dateStyle}>{this.props.deadline}</Text>
-                            </View>
-                            <View style={styles.checkFlex}>
-                                <CheckboxComponent checked={this.state.checked} onPress={this.onPress}/>
-                            </View>
+                <TouchableHighlight underlayColor={"rgba(0,0,0,0)"} onPress={() => this.props.onPress(this.props.id)}>
+                    <View style={styles.taskObject}>
+                        <View style={styles.textFlex}>
+                            {this.renderTaskObject()}
+                            <Text style={styles.dateStyle}>{this.props.deadline}</Text>
                         </View>
-                    }
+                        <View style={styles.checkFlex}>
+                            <CheckboxComponent checked={this.props.isChecked} onPress={() => this.props.onPress(this.props.id)}/>
+                        </View>
+                    </View>
                 </TouchableHighlight>
         );
     }
