@@ -82,7 +82,7 @@ export default class HomeView extends React.Component {
     };
 
     render() {
-        var motivationalQuotes = [
+        let motivationalQuotes = [
             "Just do it!",
             "You are doing great!",
             "You are great!",
