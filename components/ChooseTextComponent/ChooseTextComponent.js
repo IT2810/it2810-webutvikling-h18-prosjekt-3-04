@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./styles/styles";
-import {Keyboard, TextInput} from "react-native";
+import {Keyboard, View, TextInput, Text} from "react-native";
 import PropTypes from 'prop-types'
 
 export default class ChooseTextComponent extends React.Component {

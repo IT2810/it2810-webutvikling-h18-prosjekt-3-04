@@ -5,13 +5,54 @@ import FABComponent from '../../components/FABComponent/FABComponent.js'
 import { AddInitialTodos, RetrieveTodos, Clear, AddTodo, RemoveTodo } from '../../util/AsyncStorage'
 import TaskContainerComponent from '../TaskContainerComponent/TaskContainerComponent'
 import {Ionicons} from "@expo/vector-icons";
+import {Pedometer} from "expo";
 
 export default class HomeView extends React.Component {
+
     constructor(props) {
         super(props);
         this.createTodoCell = this.createTodoCell.bind(this);
-        this.state = {todos: null};
+        this.state = {
+            todos: null,
+            isPedometerAvailable: "checking",
+            currentStepCount: 0
+        };
     }
+
+    componentDidMount() {
+        this._subscribe();
+    }
+
+    componentWillUnmount() {
+        this._unsubscribe();
+    }
+
+    _subscribe = () => {
+        this._subscription = Pedometer.watchStepCount(result => {
+            this.setState({
+                currentStepCount: result.steps
+            });
+        });
+
+        Pedometer.isAvailableAsync().then(
+            result => {
+                this.setState({
+                    isPedometerAvailable: String(result)
+                });
+            },
+            error => {
+                this.setState({
+                    isPedometerAvailable: "Could not get isPedometerAvailable: " + error
+                });
+            }
+        );
+    };
+
+    _unsubscribe = () => {
+        this._subscription && this._subscription.remove();
+        this._subscription = null;
+    };
+
     componentWillMount() {
         this.props.navigation.setParams({ handleIconTouch:
             this.handleIconTouch });
@@ -28,7 +69,6 @@ export default class HomeView extends React.Component {
         for (let item in test) {
             console.log(test[item]);
             if(test[item].checked) {
-                console.log('pikk');
             }
         }
     };
@@ -43,7 +83,6 @@ export default class HomeView extends React.Component {
             fontSize: 18,
             fontWeight: "bold",
         },
-        rightButtonTitle: 'HEI',
         headerRight:
             <TouchableHighlight underlayColor={"rgba(0,0,0,0)"} style={styles.rightButtonItem} activeOpacity={0.5} onPress={()=> navigation.state.params.handleIconTouch('Delete tasks ⚠️','Would you like to remove all your selected tasks?')}>
                 <View style={styles.iconView}>
@@ -72,6 +111,12 @@ export default class HomeView extends React.Component {
         if (this.state.todos !== null) {
             let array = JSON.parse(this.state.todos);
             return array.map((item, key) => {
+                if (item.type === 'steps'){
+                    let steps = this.state.currentStepCount;
+                    return (
+                        <TaskContainerComponent key={key} type={item.type} isChecked={item.checked} data={item.data} steps={steps} deadline={item.deadline}/>
+                    );
+                }
                 return (
                     <TaskContainerComponent key={key} type={item.type} isChecked={item.checked} data={item.data} deadline={item.deadline}/>
                 );

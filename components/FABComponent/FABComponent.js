@@ -23,13 +23,19 @@ class FABComponent extends React.Component {
         return (
             <ActionButton buttonColor="rgba(255,0,66,1)" style={styles.FAB}>
                 <ActionButton.Item
+                    buttonColor="#dc0045"
+                    title="New step counter task"
+                    onPress={() => this.props.navigation.navigate('NewTask', { type: 'steps' })}>
+                    <Icon name="md-walk" style={styles.actionButtonIcon}/>
+                </ActionButton.Item>
+                <ActionButton.Item
                     buttonColor="#cc0035"
                     title="New image task"
                     onPress={() => this.props.navigation.navigate('NewTask', { type: 'image' })}>
                     <Icon name="md-image" style={styles.actionButtonIcon}/>
                 </ActionButton.Item>
                 <ActionButton.Item
-                    buttonColor="#a3052e"
+                    buttonColor="#bc0025"
                     title="New text task"
                     onPress={() => this.props.navigation.navigate('NewTask', { type: 'text' })}>
                     <Icon name="md-document" style={styles.actionButtonIcon}/>

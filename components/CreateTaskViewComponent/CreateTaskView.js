@@ -8,6 +8,7 @@ import ChooseImageComponent from '../ChooseImageComponent/ChooseImageComponent'
 import UploadImageModalComponent from '../UploadImageModalComponent/UploadImageModalComponent'
 import { RequestPermission } from "../../util/Permissions";
 import { ImageManipulator, ImagePicker } from "expo";
+import ChooseStepCounterComponent from "../ChooseStepCounterComponent/ChooseStepCounterComponent";
 
 
 export default class CreateTaskView extends React.Component {
@@ -57,7 +58,6 @@ export default class CreateTaskView extends React.Component {
             alert('Cannot add empty task');
             return;
         }
-
         await AddTodo(this.state.currentTask);
         this.props.navigation.navigate('Home');
     };
@@ -144,9 +144,12 @@ export default class CreateTaskView extends React.Component {
                         pickCameraImage={this._pickCameraImage}
                         toggleModal={this._toggleModal}/>
                 </React.Fragment>
-            )
-        } else {
+            );
+        } else if(this.state.currentTask.type === 'text'){
             return <ChooseTextComponent updateText={this._updateText}/>;
+        }
+        else{
+            return <ChooseStepCounterComponent updateStepsText={this._updateText}/>;
         }
     }
 
@@ -164,7 +167,7 @@ export default class CreateTaskView extends React.Component {
                     onConfirm={this._handleDatePicked}
                     onCancel={this._toggleDatePicker}
                     is24Hour={true}
-                    timeZoneOffsetInMinutes={0}
+                    timeZoneOffsetInMinutes={120}
                     mode={"datetime"}
                 />
                 <TouchableOpacity style={styles.createTaskButton} onPress={this._postTask}>
