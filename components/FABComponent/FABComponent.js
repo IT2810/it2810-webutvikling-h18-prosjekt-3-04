@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
         color: 'white',
     },
     FAB: {
-        bottom:0,
+        bottom:30,
         right: 0,
     },
 });

@@ -22,4 +22,12 @@ export default StyleSheet.create({
         fontSize: 20,
         fontWeight: "bold",
     },
+    rightButtonItem:{
+        width: 80,
+        backgroundColor:'transparent'
+    },
+    iconView:{
+        marginLeft: 40,
+    }
+
 })
