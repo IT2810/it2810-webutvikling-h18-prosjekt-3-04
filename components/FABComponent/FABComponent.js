@@ -25,13 +25,13 @@ class FABComponent extends React.Component {
                 <ActionButton.Item
                     buttonColor="#cc0035"
                     title="New image task"
-                    onPress={() => this.props.navigation.navigate('ImageTask')}>
+                    onPress={() => this.props.navigation.navigate('NewTask', { type: 'image' })}>
                     <Icon name="md-image" style={styles.actionButtonIcon}/>
                 </ActionButton.Item>
                 <ActionButton.Item
                     buttonColor="#a3052e"
                     title="New text task"
-                    onPress={() => this.props.navigation.navigate('TextTask')}>
+                    onPress={() => this.props.navigation.navigate('NewTask', { type: 'text' })}>
                     <Icon name="md-document" style={styles.actionButtonIcon}/>
                 </ActionButton.Item>
             </ActionButton>

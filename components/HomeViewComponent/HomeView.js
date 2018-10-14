@@ -48,7 +48,7 @@ export default class HomeView extends React.Component {
 
             return array.map((item, key) => {
                 return (
-                    <TaskContainerComponent key={key} type={item.type} data={item.data} deadline={item.deadline}/>
+                    <TaskContainerComponent key={key} type={item.type} data={item.data} deadline={item.deadline} checked={item.checked}/>
                 );
             });
         }
@@ -56,7 +56,7 @@ export default class HomeView extends React.Component {
     };
 
     render() {
-        var motivationalQuotes = [
+        let motivationalQuotes = [
             "Just do it!",
             "You are doing great!",
             "You are great!",

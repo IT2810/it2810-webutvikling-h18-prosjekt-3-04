@@ -1,5 +1,4 @@
-import {Dimensions, StyleSheet} from 'react-native';
-let width = Dimensions.get('window').width; //full width
+import {StyleSheet} from 'react-native';
 
 export default StyleSheet.create({
 
@@ -38,8 +37,6 @@ export default StyleSheet.create({
         shadowOpacity: 0.2,
         shadowRadius: 3,
         elevation: 1,
-        marginBottom: 150,
-        width:133,
         alignSelf:'flex-end',
         marginRight: '5%'
     },
@@ -64,6 +61,8 @@ export default StyleSheet.create({
         shadowOpacity: 0.2,
         shadowRadius: 3,
         elevation: 1,
+        position: 'absolute',
+        bottom: 30,
         alignItems: 'center',
         justifyContent: 'center',
     },

@@ -24,6 +24,7 @@ export async function RequestPermission(permission) {
     return true;
 }
 
+
 /**
  * @return {boolean}
  */
