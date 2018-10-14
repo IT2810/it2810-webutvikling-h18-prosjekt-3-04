@@ -49,19 +49,4 @@ export default StyleSheet.create({
         borderColor: '#f3f3f3',
         alignSelf: "center",
     },
-    motivationalElement: {
-        height:90,
-        marginTop:15,
-        width:width-40,
-
-    },
-    motivationalText: {
-        fontSize: 16,
-        marginLeft:15,
-        marginTop:32,
-        color:'#bcbcbc',
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'flex-start',
-    }
 });
