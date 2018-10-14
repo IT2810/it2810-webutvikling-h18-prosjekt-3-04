@@ -24,14 +24,13 @@ export default class HomeView extends React.Component {
         ])
     };
     deleteSelectedTasks = () =>{
-        console.log('hey alertbro')
-        /*
         let test = JSON.parse(this.state.todos);
         for (let item in test) {
-            if(test[item].isChecked) {
-
+            console.log(test[item]);
+            if(test[item].checked) {
+                console.log('pikk');
             }
-        }*/
+        }
     };
      static navigationOptions = ({navigation})=>({
         title: 'BUTLER',
