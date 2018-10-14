@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, View, ScrollView, SafeAreaView, TouchableHighlight} from 'react-native';
+import {Text,Alert, View, ScrollView, SafeAreaView, TouchableHighlight} from 'react-native';
 import styles from './styles/styles'
 import FABComponent from '../../components/FABComponent/FABComponent.js'
 import { AddInitialTodos, RetrieveTodos, Clear, AddTodo, RemoveTodo } from '../../util/AsyncStorage'
@@ -17,14 +17,21 @@ export default class HomeView extends React.Component {
             this.handleIconTouch });
 
     }
-    handleIconTouch = () => {
+    handleIconTouch = (title, message) => {
+        Alert.alert(title, message, [
+            {text: 'Cancel', onPress: () => console.log('Cancel Pressed'), style: 'cancel'},
+            {text: 'Yes please', onPress: () => this.deleteSelectedTasks()},
+        ])
+    };
+    deleteSelectedTasks = () =>{
+        console.log('hey alertbro')
+        /*
         let test = JSON.parse(this.state.todos);
         for (let item in test) {
             if(test[item].isChecked) {
-                 /*Todo: DELETE TASK*/
 
             }
-        }
+        }*/
     };
      static navigationOptions = ({navigation})=>({
         title: 'BUTLER',
@@ -32,14 +39,14 @@ export default class HomeView extends React.Component {
             backgroundColor: '#fff',
         },
         headerTitleStyle: {
-            color: '#ff0040',
+            color: '#000',
             letterSpacing: 5,
             fontSize: 18,
             fontWeight: "bold",
         },
         rightButtonTitle: 'HEI',
         headerRight:
-            <TouchableHighlight underlayColor={"rgba(0,0,0,0)"} style={styles.rightButtonItem} activeOpacity={0.5} onPress={()=> navigation.state.params.handleIconTouch()}>
+            <TouchableHighlight underlayColor={"rgba(0,0,0,0)"} style={styles.rightButtonItem} activeOpacity={0.5} onPress={()=> navigation.state.params.handleIconTouch('Delete tasks ⚠️','Would you like to remove all your selected tasks?')}>
                 <View style={styles.iconView}>
                     <Ionicons  name="md-trash" size={25} color="#ff0042" />
                 </View>
@@ -101,7 +108,8 @@ export default class HomeView extends React.Component {
             "Do you remember?",
             "Have you done it yet?",
             "Stop procrastinating!",
-            "Stay hydrated!"
+            "Stay hydrated!",
+            "B U T L E R ❤️ you."
         ];
 
         let randomIndex = Math.floor(Math.random() * (motivationalQuotes.length - 1));
