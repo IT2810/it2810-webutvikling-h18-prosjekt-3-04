@@ -13,5 +13,6 @@ export default StyleSheet.create({
         marginBottom:20,
         fontSize: 17,
         fontWeight:"bold",
+        textAlignVertical: "top",
     },
 })
