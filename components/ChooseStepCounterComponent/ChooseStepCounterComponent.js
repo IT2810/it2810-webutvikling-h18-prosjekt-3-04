@@ -15,7 +15,7 @@ export default class ChooseStepCounterComponent extends React.Component {
                 style ={styles.textInputField}
                 containerViewStyle={{marginLeft:-10,marginRight:null,width:"105%"}}
                 placeholder={"Type in your step-goal 🤸🏼‍♀️"}
-                keyboardType={"number-pad"}
+                keyboardType={"numeric"}
                 multiline={false}
                 returnKeyType={"done"}
                 maxLength={14}

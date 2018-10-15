@@ -1,5 +1,5 @@
 import React from 'react';
-import { TouchableOpacity, Text , View } from 'react-native';
+import {TouchableOpacity, Text, View, Alert} from 'react-native';
 import styles from './styles/styles'
 import DateTimePicker from 'react-native-modal-datetime-picker';
 import { AddTodo } from "../../util/AsyncStorage";
@@ -56,7 +56,7 @@ export default class CreateTaskView extends React.Component {
 
     _postTask = async() => {
         if (this.state.currentTask.data === null || this.state.currentTask.data === '') {
-            alert('Cannot add empty task');
+            Alert.alert('Cannot add empty task', 'Please fill out the task correctly and try again');
             return;
         }
         await AddTodo(this.state.currentTask);
@@ -126,7 +126,7 @@ export default class CreateTaskView extends React.Component {
         }
 
         const uri = result.uri;
-        const actions = [{ resize: { width:300 } }];
+        const actions = [{ resize: { width: 300 } }];
         const saveOptions = {
             compress: 0.5,
             format: 'jpeg',

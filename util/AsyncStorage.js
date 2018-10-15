@@ -53,7 +53,7 @@ export async function AddTodo(todo) {
     }
 }
 
-export async function RemoveTodo(index) {
+export async function RemoveTodo(todos) {
     try {
         const todoString = await RetrieveTodos();
         let todos = JSON.parse(todoString);

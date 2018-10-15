@@ -24,7 +24,7 @@ export default class TaskContainerComponent extends Component{
         }
         else if (this.props.type === "steps"){
             let data = this.props.data.split('/');
-            return <Text style={styles.taskText}>🏃🏻‍♂️ {parseInt(data[0]) + parseInt(data[1])} of {data[2]} steps</Text>
+            return <Text style={styles.taskText}>🏃🏻‍♂️ {parseInt(data[0])} of {data[1]} steps</Text>
         }
         else {
            return <Text style={styles.taskText}>{this.props.data}</Text>

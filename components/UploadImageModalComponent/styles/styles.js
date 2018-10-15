@@ -6,13 +6,13 @@ export default StyleSheet.create({
         backgroundColor: 'rgba(255,255,255,0)',
         width: '90%',
         display: 'flex',
-        justifyContent: 'flex-end',
+        justifyContent: 'center',
     },
 
     button: {
         backgroundColor: '#ff0042',
         borderRadius: 10,
-        margin: 1,
+        margin: 5,
         width: '100%',
     },
 })
