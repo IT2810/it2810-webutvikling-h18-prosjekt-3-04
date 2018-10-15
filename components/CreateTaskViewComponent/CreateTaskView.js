@@ -1,5 +1,5 @@
 import React from 'react';
-import { TouchableOpacity, Text , View } from 'react-native';
+import {TouchableOpacity, Text, View, Alert} from 'react-native';
 import styles from './styles/styles'
 import DateTimePicker from 'react-native-modal-datetime-picker';
 import { AddTodo } from "../../util/AsyncStorage";
@@ -8,6 +8,7 @@ import ChooseImageComponent from '../ChooseImageComponent/ChooseImageComponent'
 import UploadImageModalComponent from '../UploadImageModalComponent/UploadImageModalComponent'
 import { RequestPermission } from "../../util/Permissions";
 import { ImageManipulator, ImagePicker } from "expo";
+import ChooseStepCounterComponent from "../ChooseStepCounterComponent/ChooseStepCounterComponent";
 
 
 export default class CreateTaskView extends React.Component {
@@ -19,6 +20,7 @@ export default class CreateTaskView extends React.Component {
         this._toggleModal = this._toggleModal.bind(this);
         this._postTask = this._postTask.bind(this);
         this._updateText = this._updateText.bind(this);
+        this._updateStepsText = this._updateStepsText.bind(this);
         this._toggleDatePicker = this._toggleDatePicker.bind(this);
         this._handleDatePicked = this._handleDatePicked.bind(this);
         this.state = {
@@ -54,10 +56,9 @@ export default class CreateTaskView extends React.Component {
 
     _postTask = async() => {
         if (this.state.currentTask.data === null || this.state.currentTask.data === '') {
-            alert('Cannot add empty task');
+            Alert.alert('Cannot add empty task', 'Please fill out the task correctly and try again');
             return;
         }
-
         await AddTodo(this.state.currentTask);
         this.props.navigation.navigate('Home');
     };
@@ -79,6 +80,12 @@ export default class CreateTaskView extends React.Component {
     _updateText(text) {
         let tempTask = this.state.currentTask;
         tempTask.data = text;
+        this.setState({ currentTask: tempTask });
+    }
+
+    _updateStepsText(text) {
+        let tempTask = this.state.currentTask;
+        tempTask.data = '0/' + text;
         this.setState({ currentTask: tempTask });
     }
 
@@ -119,7 +126,7 @@ export default class CreateTaskView extends React.Component {
         }
 
         const uri = result.uri;
-        const actions = [{ resize: { width:300 } }];
+        const actions = [{ resize: { width: 300 } }];
         const saveOptions = {
             compress: 0.5,
             format: 'jpeg',
@@ -144,9 +151,12 @@ export default class CreateTaskView extends React.Component {
                         pickCameraImage={this._pickCameraImage}
                         toggleModal={this._toggleModal}/>
                 </React.Fragment>
-            )
-        } else {
+            );
+        } else if(this.state.currentTask.type === 'text'){
             return <ChooseTextComponent updateText={this._updateText}/>;
+        }
+        else{
+            return <ChooseStepCounterComponent updateStepsText={this._updateStepsText}/>;
         }
     }
 
@@ -164,7 +174,7 @@ export default class CreateTaskView extends React.Component {
                     onConfirm={this._handleDatePicked}
                     onCancel={this._toggleDatePicker}
                     is24Hour={true}
-                    timeZoneOffsetInMinutes={0}
+                    timeZoneOffsetInMinutes={120}
                     mode={"datetime"}
                 />
                 <TouchableOpacity style={styles.createTaskButton} onPress={this._postTask}>
