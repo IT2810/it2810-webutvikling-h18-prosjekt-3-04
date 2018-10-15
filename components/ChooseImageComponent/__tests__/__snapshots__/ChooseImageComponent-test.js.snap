@@ -23,7 +23,7 @@ exports[`renders correctly 1`] = `
   <Image
     source={
       Object {
-        "uri": "data:image/jpeg;base64,undefined",
+        "uri": "data:image/jpeg;base64,data:image/jpeg;base64,testestestestestestestest",
       }
     }
     style={
@@ -63,12 +63,7 @@ exports[`renders correctly 2`] = `
     }
   }
 >
-  <Image
-    source={
-      Object {
-        "uri": "data:image/jpeg;base64,undefined",
-      }
-    }
+  <View
     style={
       Object {
         "alignItems": "center",
@@ -82,6 +77,20 @@ exports[`renders correctly 2`] = `
         "width": "90%",
       }
     }
-  />
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#d6d6d6",
+          "fontSize": 24,
+        }
+      }
+    >
+      +
+    </Text>
+  </View>
 </View>
 `;

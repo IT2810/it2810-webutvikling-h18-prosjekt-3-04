@@ -81,9 +81,9 @@ exports[`renders correctly 1`] = `
           },
           Object {
             "elevation": 5,
-            "shadowColor": "#000",
+            "shadowColor": "#3f0111",
             "shadowOffset": Object {
-              "height": 5,
+              "height": 3,
               "width": 0,
             },
             "shadowOpacity": 0.35,

@@ -50,11 +50,12 @@ export default class HomeView extends React.Component {
 
     randomIndex = Math.floor(Math.random() * (this.motivationalQuotes.length - 1));
 
-    componentWillMount() {
-        this.props.navigation.setParams({ handleIconTouch:
-            this.handleIconTouch });
 
+    componentWillMount() {
+            this.props.navigation.setParams({ handleIconTouch:
+            this.handleIconTouch });
     }
+
 
     handleIconTouch = (title, message) => {
         let todos = JSON.parse(this.state.todos);

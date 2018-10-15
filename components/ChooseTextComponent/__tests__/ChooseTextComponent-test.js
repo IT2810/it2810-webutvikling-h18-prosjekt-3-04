@@ -2,7 +2,7 @@ import React from 'react';
 import ChooseTextComponent from '../ChooseTextComponent';
 import TaskContainerComponent from '../../TaskContainerComponent/TaskContainerComponent';
 import renderer from 'react-test-renderer';
-import TestUtils from 'react/test-utils'
+//import TestUtils from 'react/test-utils'
 
 let onActionMock = jest.fn(x => {return 'hei'});
 let Example;

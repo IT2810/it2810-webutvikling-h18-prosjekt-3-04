@@ -5,6 +5,6 @@ import renderer from 'react-test-renderer';
 
 
 test('renders correctly', () => {
-    const tree = renderer.create(<FabComponent/>).toJSON();
+    const tree = renderer.create(<FabComponent />).toJSON();
     expect(tree).toMatchSnapshot();
 });
