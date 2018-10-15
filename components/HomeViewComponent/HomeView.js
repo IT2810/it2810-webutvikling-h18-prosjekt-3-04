@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text,Alert, View, ScrollView, SafeAreaView, TouchableHighlight} from 'react-native';
+import {Platform, Alert, View, ScrollView, SafeAreaView, TouchableHighlight} from 'react-native';
 import styles from './styles/styles'
 import FABComponent from '../../components/FABComponent/FABComponent.js'
 import { RetrieveTodos, Clear, RemoveTodo, StoreTodos} from '../../util/AsyncStorage'
@@ -146,6 +146,10 @@ export default class HomeView extends React.Component {
                 this._getStoredTasks();
             }
         );
+
+        if (Platform.OS === 'ios') {
+            this._subscribe();
+        }
     }
 
     _getStoredTasks = async() => {
