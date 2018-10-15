@@ -28,3 +28,38 @@ exports[`renders correctly 1`] = `
   />
 </View>
 `;
+
+exports[`renders correctly 2`] = `
+<View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={null}
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FFF",
+        "borderColor": "#bcbcbc",
+        "borderRadius": 10,
+        "borderWidth": 2,
+        "height": 40,
+        "justifyContent": "center",
+        "width": 40,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    />
+  </View>
+</View>
+`;

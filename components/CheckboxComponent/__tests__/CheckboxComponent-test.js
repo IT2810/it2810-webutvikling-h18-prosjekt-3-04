@@ -5,8 +5,10 @@ import renderer from 'react-test-renderer';
 
 
 test('renders correctly', () => {
-    const tree = renderer.create(<CheckboxComponent checked={false} />).toJSON();
-    expect(tree).toMatchSnapshot();
+    const treeFalse = renderer.create(<CheckboxComponent checked={false} />).toJSON();
+    expect(treeFalse).toMatchSnapshot();
+    const treeTrue = renderer.create(<CheckboxComponent checked={true} />).toJSON();
+    expect(treeTrue).toMatchSnapshot();
 });
 
 test("default Checkstate is false", ()=>{

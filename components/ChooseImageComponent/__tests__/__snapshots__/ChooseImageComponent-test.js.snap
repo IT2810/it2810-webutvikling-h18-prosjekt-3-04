@@ -42,3 +42,46 @@ exports[`renders correctly 1`] = `
   />
 </View>
 `;
+
+exports[`renders correctly 2`] = `
+<View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "aspectRatio": 1,
+      "marginTop": 20,
+      "opacity": 1,
+      "width": "80%",
+    }
+  }
+>
+  <Image
+    source={
+      Object {
+        "uri": "data:image/jpeg;base64,undefined",
+      }
+    }
+    style={
+      Object {
+        "alignItems": "center",
+        "aspectRatio": 1,
+        "backgroundColor": "#e8e8e8",
+        "borderColor": "#d6d6d6",
+        "borderRadius": 10,
+        "borderWidth": 2,
+        "display": "flex",
+        "justifyContent": "center",
+        "width": "90%",
+      }
+    }
+  />
+</View>
+`;
