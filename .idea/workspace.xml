@@ -2,22 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16a99949-0ea8-40b7-8bd1-28c104fca168" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/components/ChooseStepCounterComponent/ChooseStepCounterComponent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ChooseStepCounterComponent/__tests__/ChooseStepCounterComponent-test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ChooseStepCounterComponent/styles/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ChooseTextComponent/ChooseTextComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/ChooseTextComponent/ChooseTextComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/HomeViewComponent/__tests__/__snapshots__/HomeViewComponent-test.js.snap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/MotivationalQuoteComponent/__tests__/MotivationalQuoteComponent-test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/MotivationalQuoteComponent/__tests__/__snapshots__/MotivationalQuoteComponent-test.js.snap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UploadImageModalComponent/__tests__/UploadImageModalComponent-test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UploadImageModalComponent/__tests__/__snapshots__/UploadImageModalComponent-test.js.snap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/ChooseTextComponent/__tests__/ChooseTextComponent-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/ChooseTextComponent/__tests__/ChooseTextComponent-test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ChooseTextComponent/styles/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/ChooseTextComponent/styles/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CreateTaskViewComponent/CreateTaskView.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/CreateTaskViewComponent/CreateTaskView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CreateTaskViewComponent/styles/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/CreateTaskViewComponent/styles/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/FABComponent/FABComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/FABComponent/FABComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/FABComponent/__tests__/FabComponent-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/FABComponent/__tests__/FabComponent-test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/FABComponent/__tests__/__snapshots__/FabComponent-test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/components/FABComponent/__tests__/__snapshots__/FabComponent-test.js.snap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/HomeViewComponent/HomeView.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/HomeViewComponent/HomeView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/MotivationalQuoteComponent/MotivationalQuoteComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/MotivationalQuoteComponent/MotivationalQuoteComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/TaskContainerComponent/TaskContainerComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/TaskContainerComponent/TaskContainerComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/UploadImageModalComponent/styles/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/UploadImageModalComponent/styles/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/AsyncStorage.js" beforeDir="false" afterPath="$PROJECT_DIR$/util/AsyncStorage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/__mocks__/Permissions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/HomeViewComponent/__tests__/HomeViewComponent-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/HomeViewComponent/__tests__/HomeViewComponent-test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,12 +22,12 @@
     <session id="256324037">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="601" />
+          <entry key="js" value="602" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="601" />
+          <entry key="JavaScript" value="602" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -50,11 +44,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/components/ChooseTextComponent/__tests__/ChooseTextComponent-test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" selection-end-line="19" />
+            <state relative-caret-position="136">
+              <caret line="8" column="41" lean-forward="true" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -74,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/HomeViewComponent/HomeView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+            <state relative-caret-position="-402">
+              <caret line="75" column="5" lean-forward="true" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -152,9 +146,9 @@
         <option value="$PROJECT_DIR$/util/__mocks__/Permissions.js" />
         <option value="$PROJECT_DIR$/components/CreateTaskViewComponent/CreateTaskView.js" />
         <option value="$PROJECT_DIR$/components/CreateTaskViewComponent/__tests__/CreateTaskViewComponent-test.js" />
-        <option value="$PROJECT_DIR$/components/ChooseTextComponent/__tests__/ChooseTextComponent-test.js" />
         <option value="$PROJECT_DIR$/components/ChooseStepCounterComponent/__tests__/ChooseStepCounterComponent-test.js" />
         <option value="$PROJECT_DIR$/components/HomeViewComponent/HomeView.js" />
+        <option value="$PROJECT_DIR$/components/ChooseTextComponent/__tests__/ChooseTextComponent-test.js" />
       </list>
     </option>
   </component>
@@ -428,7 +422,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3290000" />
+    <option name="totallyTimeSpent" value="3406000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -526,16 +520,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/ChooseTextComponent/__tests__/ChooseTextComponent-test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/util/__mocks__/Permissions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -565,8 +549,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/components/HomeViewComponent/HomeView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+        <state relative-caret-position="-402">
+          <caret line="75" column="5" lean-forward="true" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/ChooseTextComponent/__tests__/ChooseTextComponent-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="41" lean-forward="true" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

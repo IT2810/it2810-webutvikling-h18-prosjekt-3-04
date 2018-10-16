@@ -69,11 +69,12 @@ export default class HomeView extends React.Component {
         this._subscription = null;
     };
 
+
     componentWillMount() {
-        this.props.navigation.setParams({ handleIconTouch:
+            this.props.navigation.setParams({ handleIconTouch:
             this.handleIconTouch });
-        this._unsubscribe();
     }
+
 
     handleIconTouch = (title, message) => {
         let todos = JSON.parse(this.state.todos);
