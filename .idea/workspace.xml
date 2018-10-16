@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c713ddf6-0fbe-4a2d-ac9a-9ac0dd182d2a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/TaskContainerComponent/__tests__/TaskContainerComponent-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/TaskContainerComponent/__tests__/TaskContainerComponent-test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/MotivationalQuoteComponent/__tests__/MotivationalQuoteComponent-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/MotivationalQuoteComponent/__tests__/MotivationalQuoteComponent-test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/MotivationalQuoteComponent/__tests__/__snapshots__/MotivationalQuoteComponent-test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/components/MotivationalQuoteComponent/__tests__/__snapshots__/MotivationalQuoteComponent-test.js.snap" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,52 +15,32 @@
     <session id="256324037">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="js" value="1" />
+          <entry key="js" value="3" />
+          <entry key="snap" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JavaScript" value="1" />
+          <entry key="JavaScript" value="3" />
+          <entry key="Jest Snapshot" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="2" />
+          <entry key="js" value="211" />
+          <entry key="snap" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="2" />
+          <entry key="JavaScript" value="211" />
+          <entry key="Jest Snapshot" value="11" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/HomeViewComponent/__tests__/HomeViewComponent-test.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2677">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/components/TaskContainerComponent/__tests__/TaskContainerComponent-test.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/HomeViewComponent/HomeView.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -68,6 +49,39 @@
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/components/MotivationalQuoteComponent/__tests__/MotivationalQuoteComponent-test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/MotivationalQuoteComponent/MotivationalQuoteComponent.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-145">
+              <caret line="25" column="31" lean-forward="true" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/MotivationalQuoteComponent/__tests__/__snapshots__/MotivationalQuoteComponent-test.js.snap">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="469">
+              <caret line="59" column="23" lean-forward="true" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -90,6 +104,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/components/TaskContainerComponent/__tests__/TaskContainerComponent-test.js" />
+        <option value="$PROJECT_DIR$/components/MotivationalQuoteComponent/__tests__/__snapshots__/MotivationalQuoteComponent-test.js.snap" />
+        <option value="$PROJECT_DIR$/components/MotivationalQuoteComponent/__tests__/MotivationalQuoteComponent-test.js" />
       </list>
     </option>
   </component>
@@ -156,6 +172,27 @@
               <item name="it2810-webutvikling-h18-prosjekt-3-04" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="MotivationalQuoteComponent" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="it2810-webutvikling-h18-prosjekt-3-04" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="MotivationalQuoteComponent" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="__tests__" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="it2810-webutvikling-h18-prosjekt-3-04" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="MotivationalQuoteComponent" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="__tests__" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="__snapshots__" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="it2810-webutvikling-h18-prosjekt-3-04" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="TaskContainerComponent" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
@@ -176,6 +213,14 @@
       </pane>
     </panes>
   </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="Cre&#9;null&#9;null&#10;CreateTaskView&#9;FILE&#9;file:///Users/Philip/Dropbox/Skole/webDev/prosjekt3/it2810-webutvikling-h18-prosjekt-3-04/components/CreateTaskViewComponent" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -187,6 +232,60 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager" selected="Jest.renders correctly with several elemtents">
+    <configuration name="MotivationalQuoteComponent-test.js" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/components/MotivationalQuoteComponent/__tests__/MotivationalQuoteComponent-test.js" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Run with coverage" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <jest-options value="--coverage" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TaskContainerComponent-test.js" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/components/TaskContainerComponent/__tests__/TaskContainerComponent-test.js" />
+      <method v="2" />
+    </configuration>
+    <configuration name="renders correctly with several elemtents" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/components/MotivationalQuoteComponent/__tests__/MotivationalQuoteComponent-test.js" />
+      <test-names>
+        <test-name value="renders correctly with several elemtents" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Jest.Run with coverage" />
+      <item itemvalue="Jest.TaskContainerComponent-test.js" />
+      <item itemvalue="Jest.MotivationalQuoteComponent-test.js" />
+      <item itemvalue="Jest.renders correctly with several elemtents" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.renders correctly with several elemtents" />
+        <item itemvalue="Jest.MotivationalQuoteComponent-test.js" />
+        <item itemvalue="Jest.TaskContainerComponent-test.js" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -206,20 +305,52 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="renders_correctly_with_several_elemtents - 2018.10.17 at 00h 05m 35s.xml">
+      <configuration name="renders correctly with several elemtents" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="renders_correctly_with_several_elemtents - 2018.10.17 at 00h 05m 57s.xml">
+      <configuration name="renders correctly with several elemtents" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="renders_correctly_with_several_elemtents - 2018.10.17 at 00h 06m 16s.xml">
+      <configuration name="renders correctly with several elemtents" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="renders_correctly_with_several_elemtents - 2018.10.17 at 00h 16m 03s.xml">
+      <configuration name="renders correctly with several elemtents" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="renders_correctly_with_several_elemtents - 2018.10.17 at 00h 17m 23s.xml">
+      <configuration name="renders correctly with several elemtents" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="renders_correctly_with_several_elemtents - 2018.10.17 at 00h 19m 29s.xml">
+      <configuration name="renders correctly with several elemtents" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="renders_correctly_with_several_elemtents - 2018.10.17 at 00h 19m 39s.xml">
+      <configuration name="renders correctly with several elemtents" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="renders_correctly_with_several_elemtents - 2018.10.17 at 00h 19m 47s.xml">
+      <configuration name="renders correctly with several elemtents" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Update_snapshot_for_renders_correctly_with_several_elemtents - 2018.10.17 at 00h 19m 55s.xml">
+      <configuration name="Update snapshot for renders correctly with several elemtents" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="renders_correctly_with_several_elemtents - 2018.10.17 at 00h 20m 03s.xml">
+      <configuration name="renders correctly with several elemtents" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106000" />
+    <option name="totallyTimeSpent" value="2011000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18809272" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18809272" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4219089" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4219089" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -271,8 +402,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/components/TaskContainerComponent/__tests__/TaskContainerComponent-test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="187">
+          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/HomeViewComponent/HomeView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1967">
+          <caret line="141" column="43" selection-start-line="141" selection-start-column="43" selection-end-line="141" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/MotivationalQuoteComponent/__tests__/__snapshots__/MotivationalQuoteComponent-test.js.snap">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="59" column="23" lean-forward="true" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/MotivationalQuoteComponent/MotivationalQuoteComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-145">
+          <caret line="25" column="31" lean-forward="true" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/MotivationalQuoteComponent/__tests__/MotivationalQuoteComponent-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
