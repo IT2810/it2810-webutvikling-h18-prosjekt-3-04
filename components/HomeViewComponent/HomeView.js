@@ -1,10 +1,11 @@
 import React from 'react';
-import {Text,Alert, View, ScrollView, SafeAreaView, TouchableHighlight} from 'react-native';
+import {Platform, Alert, View, ScrollView, SafeAreaView, TouchableHighlight} from 'react-native';
 import styles from './styles/styles'
 import FABComponent from '../../components/FABComponent/FABComponent.js'
-import { RetrieveTodos, Clear, RemoveTodo, StoreTodos} from '../../util/AsyncStorage'
+import { RetrieveTodos, Clear, StoreTodos} from '../../util/AsyncStorage'
 import TaskContainerComponent from '../TaskContainerComponent/TaskContainerComponent'
 import {Ionicons} from "@expo/vector-icons";
+import {Pedometer} from "expo";
 import MotivationalQuoteComponent from "../MotivationalQuoteComponent/MotivationalQuoteComponent";
 
 export default class HomeView extends React.Component {
@@ -12,48 +13,66 @@ export default class HomeView extends React.Component {
     constructor(props) {
         super(props);
         this.createTodoCell = this.createTodoCell.bind(this);
+        this.quotes = React.createRef();
         this._onTaskPress = this._onTaskPress.bind(this);
         this.state = {
             todos: null,
+            isPedometerAvailable: "checking",
+            stepsMade: 0,
+            numTodos: 0,
         };
     }
 
-    motivationalQuotes = [
-        "Just do it!",
-        "You are doing great!",
-        "You are great!",
-        "You go girl!",
-        "Stay productive!",
-        "Go get ‘em!",
-        "Nice progression!",
-        "Achieve your goals!",
-        "You become great.",
-        "Move along.",
-        "How are you?",
-        "Andreas loves you!",
-        "Gotta catch 'em all!",
-        "Go go gadget!",
-        "Nothing is impossible.",
-        "Live in the present.",
-        "Apples are nice.",
-        "I like you.",
-        "Do you like me?",
-        "Run, Forrest!",
-        "Catch me if you can.",
-        "What are your goals?",
-        "Do you remember?",
-        "Have you done it yet?",
-        "Stop procrastinating!",
-        "Stay hydrated!",
-        "B U T L E R ❤️ you."
-    ];
+    componentWillUnmount() {
+        this._unsubscribe();
+    }
 
-    randomIndex = Math.floor(Math.random() * (this.motivationalQuotes.length - 1));
+    _subscribe = () => {
+        this._subscription = Pedometer.watchStepCount(result => {
+
+            let todos = JSON.parse(this.state.todos);
+
+            let deltaValue = parseInt(result.steps) - parseInt(this.state.stepsMade);
+            this.setState({ stepsMade: result.steps });
+
+            for (let index in todos) {
+                if (todos[index].type === 'steps') {
+                    let data = todos[index].data.split('/');
+                    let test = parseInt(deltaValue) + parseInt(data[0]) + '/' + data[1];
+                    todos[index].data = test;
+                }
+            }
+
+            StoreTodos(todos);
+
+            this.setState({
+                todos: JSON.stringify(todos)
+            });
+        });
+
+        Pedometer.isAvailableAsync().then(
+            result => {
+                this.setState({
+                    isPedometerAvailable: String(result)
+                });
+            },
+            error => {
+                this.setState({
+                    isPedometerAvailable: "Could not get isPedometerAvailable: " + error
+                });
+            }
+        );
+    };
+
+    _unsubscribe = () => {
+        this._subscription && this._subscription.remove();
+        this._subscription = null;
+    };
 
     componentWillMount() {
         this.props.navigation.setParams({ handleIconTouch:
             this.handleIconTouch });
-
+        this._unsubscribe();
     }
 
     handleIconTouch = (title, message) => {
@@ -68,7 +87,7 @@ export default class HomeView extends React.Component {
         }
 
         if (!oneItemSelected) {
-            alert('No items selected!');
+            Alert.alert('No tasks selected', 'Please select the tasks you want to delete and try again.');
             return;
         }
 
@@ -78,17 +97,23 @@ export default class HomeView extends React.Component {
         ])
     };
 
-    deleteSelectedTasks = async() =>{
+
+    deleteSelectedTasks = () =>{
         let todos = JSON.parse(this.state.todos);
+        let newTodos = [];
 
         for (let index in todos) {
-            if(todos[index].checked) {
-                await RemoveTodo(index); // Remove from AsyncStorage
-                todos.splice(index, 1); // Remove from local state
-                this.setState({ todos: JSON.stringify(todos) });
+            if(!todos[index].checked) {
+                newTodos.push(todos[index]);
             }
         }
-        this.componentDidMount();
+
+        StoreTodos(newTodos);
+        this.setState({
+            todos: JSON.stringify(newTodos),
+            numTodos: newTodos.length,
+        });
+        this.quotes.current.newQuote();
     };
 
     static navigationOptions = ({navigation})=>({
@@ -102,7 +127,6 @@ export default class HomeView extends React.Component {
             fontSize: 18,
             fontWeight: "bold",
         },
-        rightButtonTitle: 'HEI',
         headerRight:
             <TouchableHighlight
                 underlayColor={"rgba(0,0,0,0)"}
@@ -115,21 +139,32 @@ export default class HomeView extends React.Component {
             </TouchableHighlight>,
     });
 
-    async componentDidMount() {
-
-        // await Clear();
-        const todos = await RetrieveTodos();
-        this.setState({ todos: todos });
+    componentDidMount() {
+        this._getStoredTasks();
 
         // Add listener to update feed when returning to home-screen
         const didBlurSubscription = this.props.navigation.addListener(
             'didFocus',
             payload => {
-                this.componentDidMount();
+                this._getStoredTasks();
             }
         );
 
+        if (Platform.OS === 'ios') {
+            this._subscribe();
+        }
     }
+
+    _getStoredTasks = async() => {
+        //await Clear();
+        const todos = await RetrieveTodos();
+        let length = JSON.parse(todos).length;
+        this.setState({
+            todos: todos,
+            numTodos: length,
+        });
+        this.quotes.current.newQuote();
+    };
 
     _onTaskPress = (index) => {
         let todos = JSON.parse(this.state.todos);
@@ -157,7 +192,6 @@ export default class HomeView extends React.Component {
                 );
             });
         }
-        return <Text>Looks like there's nothing here :)</Text>
     };
 
     render() {
@@ -166,7 +200,7 @@ export default class HomeView extends React.Component {
                 <View style={styles.viewWrapper}>
                     <ScrollView contentContainerStyle={styles.container}>
                         {this.createTodoCell()}
-                        <MotivationalQuoteComponent data={this.motivationalQuotes[this.randomIndex]}/>
+                        <MotivationalQuoteComponent ref={this.quotes} numTodos={this.state.numTodos}/>
                     </ScrollView>
                 </View>
                 <FABComponent navigation={this.props.navigation}/>

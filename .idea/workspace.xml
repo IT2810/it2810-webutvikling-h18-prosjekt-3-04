@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ed6ac24-427d-4903-9480-87725bf3ff55" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/__mocks__/react-native-modal-datetime-picker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/__mocks__/Permissions.js" afterDir="false" />
+    <list default="true" id="16a99949-0ea8-40b7-8bd1-28c104fca168" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/components/ChooseStepCounterComponent/ChooseStepCounterComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ChooseStepCounterComponent/__tests__/ChooseStepCounterComponent-test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ChooseStepCounterComponent/styles/styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ChooseImageComponent/__tests__/__snapshots__/ChooseImageComponent-test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/components/ChooseImageComponent/__tests__/__snapshots__/ChooseImageComponent-test.js.snap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ChooseTextComponent/ChooseTextComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/ChooseTextComponent/ChooseTextComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/ChooseTextComponent/__tests__/ChooseTextComponent-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/ChooseTextComponent/__tests__/ChooseTextComponent-test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CreateTaskViewComponent/__tests__/CreateTaskViewComponent-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/CreateTaskViewComponent/__tests__/CreateTaskViewComponent-test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ChooseTextComponent/styles/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/ChooseTextComponent/styles/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/CreateTaskViewComponent/CreateTaskView.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/CreateTaskViewComponent/CreateTaskView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/CreateTaskViewComponent/styles/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/CreateTaskViewComponent/styles/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/FABComponent/FABComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/FABComponent/FABComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/HomeViewComponent/HomeView.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/HomeViewComponent/HomeView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/MotivationalQuoteComponent/MotivationalQuoteComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/MotivationalQuoteComponent/MotivationalQuoteComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/TaskContainerComponent/TaskContainerComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/TaskContainerComponent/TaskContainerComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/UploadImageModalComponent/styles/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/UploadImageModalComponent/styles/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/AsyncStorage.js" beforeDir="false" afterPath="$PROJECT_DIR$/util/AsyncStorage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/__mocks__/Permissions.js" beforeDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/node_modules/" />
-    <ignored path="$PROJECT_DIR$/.tmp/" />
-    <ignored path="$PROJECT_DIR$/temp/" />
-    <ignored path="$PROJECT_DIR$/tmp/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,69 +28,22 @@
     <session id="256324037">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="6314" />
-          <entry key="json" value="12" />
+          <entry key="js" value="601" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JSON" value="12" />
-          <entry key="JavaScript" value="6314" />
+          <entry key="JavaScript" value="601" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="babelrc" value="1" />
-          <entry key="js" value="54" />
+          <entry key="js" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="54" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="1404914898">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="js" value="33" />
-          <entry key="json" value="2" />
-          <entry key="snap" value="4" />
-          <entry key="ts" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JSON" value="2" />
-          <entry key="JavaScript" value="33" />
-          <entry key="Jest Snapshot" value="4" />
-          <entry key="TypeScript" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="js" value="1098" />
-          <entry key="json" value="26" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JSON" value="26" />
-          <entry key="JavaScript" value="1098" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.js.language.service.starts">
-        <counts>
-          <entry key="TypeScriptServerServiceImpl" value="1" />
+          <entry key="JavaScript" value="5" />
         </counts>
       </usages-collector>
     </session>
@@ -93,19 +51,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
+        <entry file="file://$PROJECT_DIR$/components/ChooseTextComponent/__tests__/ChooseTextComponent-test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+            <state relative-caret-position="323">
+              <caret line="19" selection-end-line="19" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/CreateTaskViewComponent/CreateTaskView.js">
+        <entry file="file://$PROJECT_DIR$/components/ChooseTextComponent/ChooseTextComponent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
+            <state relative-caret-position="425">
+              <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -114,31 +75,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/components/CreateTaskViewComponent/__tests__/CreateTaskViewComponent-test.js">
+        <entry file="file://$PROJECT_DIR$/components/HomeViewComponent/HomeView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="149" lean-forward="true" selection-start-line="149" selection-end-line="149" />
+            <state relative-caret-position="306">
+              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/util/__mocks__/Permissions.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/util/Permissions.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -193,7 +136,6 @@
         <option value="$PROJECT_DIR$/components/TaskContainerComponent/styles/styles.js" />
         <option value="$PROJECT_DIR$/components/TaskContainerComponent/TaskContainerComponent.js" />
         <option value="$PROJECT_DIR$/util/AsyncStorage.js" />
-        <option value="$PROJECT_DIR$/components/HomeViewComponent/HomeView.js" />
         <option value="$PROJECT_DIR$/__tests__/CheckboxComponent-test.js" />
         <option value="$PROJECT_DIR$/__tests__/TaskContainerComponent-test.js" />
         <option value="$PROJECT_DIR$/__tests__/ChooseImageComponent-test.js" />
@@ -204,13 +146,15 @@
         <option value="$PROJECT_DIR$/components/CheckboxComponent/__tests__/CheckboxComponent-test.js" />
         <option value="$PROJECT_DIR$/components/ChooseImageComponent/__tests__/ChooseImageComponent-test.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/components/ChooseTextComponent/__tests__/ChooseTextComponent-test.js" />
         <option value="$PROJECT_DIR$/__mocks__/react-native-modal-datetime-picker.js" />
         <option value="$PROJECT_DIR$/util/Permissions.js" />
         <option value="$PROJECT_DIR$/__mocks__/expo.js" />
         <option value="$PROJECT_DIR$/util/__mocks__/Permissions.js" />
         <option value="$PROJECT_DIR$/components/CreateTaskViewComponent/CreateTaskView.js" />
         <option value="$PROJECT_DIR$/components/CreateTaskViewComponent/__tests__/CreateTaskViewComponent-test.js" />
+        <option value="$PROJECT_DIR$/components/ChooseTextComponent/__tests__/ChooseTextComponent-test.js" />
+        <option value="$PROJECT_DIR$/components/ChooseStepCounterComponent/__tests__/ChooseStepCounterComponent-test.js" />
+        <option value="$PROJECT_DIR$/components/HomeViewComponent/HomeView.js" />
       </list>
     </option>
   </component>
@@ -225,17 +169,8 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths>
-      <path value="$PROJECT_DIR$/package.json" />
-    </packageJsonPaths>
-  </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
-  </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -259,19 +194,6 @@
             <path>
               <item name="it2810-webutvikling-h18-prosjekt-3-04" type="b2602c69:ProjectViewProjectNode" />
               <item name="it2810-webutvikling-h18-prosjekt-3-04" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="CreateTaskViewComponent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="it2810-webutvikling-h18-prosjekt-3-04" type="b2602c69:ProjectViewProjectNode" />
-              <item name="it2810-webutvikling-h18-prosjekt-3-04" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="CreateTaskViewComponent" type="462c0819:PsiDirectoryNode" />
-              <item name="__tests__" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="it2810-webutvikling-h18-prosjekt-3-04" type="b2602c69:ProjectViewProjectNode" />
-              <item name="it2810-webutvikling-h18-prosjekt-3-04" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -284,11 +206,6 @@
             <path>
               <item name="it2810-webutvikling-h18-prosjekt-3-04" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="it2810-webutvikling-h18-prosjekt-3-04" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="it2810-webutvikling-h18-prosjekt-3-04" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
@@ -308,6 +225,18 @@
             <path>
               <item name="it2810-webutvikling-h18-prosjekt-3-04" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="ChooseStepCounterComponent" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="it2810-webutvikling-h18-prosjekt-3-04" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="HomeViewComponent" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="it2810-webutvikling-h18-prosjekt-3-04" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="util" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
@@ -315,14 +244,6 @@
         </subPane>
       </pane>
     </panes>
-  </component>
-  <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="Cre&#9;null&#9;null&#10;CreateTaskView&#9;FILE&#9;file:///Users/Philip/Dropbox/Skole/webDev/prosjekt3/it2810-webutvikling-h18-prosjekt-3-04/components/CreateTaskViewComponent" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -345,7 +266,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.posting task should update storage and navigate to home">
+  <component name="RunManager" selected="Jest.Run tests with coverage">
     <configuration name="Run tests with coverage" type="JavaScriptTestRunnerJest" factoryName="Jest">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -363,30 +284,6 @@
       <scope-kind value="ALL" />
       <method v="2" />
     </configuration>
-    <configuration name="choosing date updates deadline state" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/components/CreateTaskViewComponent/__tests__/CreateTaskViewComponent-test.js" />
-      <test-names>
-        <test-name value="choosing date updates deadline state" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="posting empty task should prevent storage update" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/components/CreateTaskViewComponent/__tests__/CreateTaskViewComponent-test.js" />
-      <test-names>
-        <test-name value="posting empty task should prevent storage update" />
-      </test-names>
-      <method v="2" />
-    </configuration>
     <configuration name="posting task should update storage and navigate to home" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -399,27 +296,51 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="toggle DateTimePicker should update visible state" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+    <configuration name="renders correctly (1)" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/components/CreateTaskViewComponent/__tests__/CreateTaskViewComponent-test.js" />
+      <test-file value="$PROJECT_DIR$/components/ChooseStepCounterComponent/__tests__/ChooseStepCounterComponent-test.js" />
       <test-names>
-        <test-name value="toggle DateTimePicker should update visible state" />
+        <test-name value="renders correctly" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="toggle modal should update visible state" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+    <configuration name="renders correctly" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/components/CreateTaskViewComponent/__tests__/CreateTaskViewComponent-test.js" />
+      <test-file value="$PROJECT_DIR$/components/ChooseTextComponent/__tests__/ChooseTextComponent-test.js" />
       <test-names>
-        <test-name value="toggle modal should update visible state" />
+        <test-name value="renders correctly" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="updating text " type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/components/ChooseTextComponent/__tests__/ChooseTextComponent-test.js" />
+      <test-names>
+        <test-name value="updating text " />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="updating text should call updateStepsText function" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/components/ChooseStepCounterComponent/__tests__/ChooseStepCounterComponent-test.js" />
+      <test-names>
+        <test-name value="updating text should call updateStepsText function" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -440,19 +361,19 @@
       <item itemvalue="Jest.Run tests with coverage" />
       <item itemvalue="Jest.Run tests" />
       <item itemvalue="npm.Unnamed" />
-      <item itemvalue="Jest.choosing date updates deadline state" />
-      <item itemvalue="Jest.toggle DateTimePicker should update visible state" />
-      <item itemvalue="Jest.toggle modal should update visible state" />
-      <item itemvalue="Jest.posting empty task should prevent storage update" />
       <item itemvalue="Jest.posting task should update storage and navigate to home" />
+      <item itemvalue="Jest.renders correctly" />
+      <item itemvalue="Jest.updating text " />
+      <item itemvalue="Jest.renders correctly (1)" />
+      <item itemvalue="Jest.updating text should call updateStepsText function" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.updating text should call updateStepsText function" />
+        <item itemvalue="Jest.renders correctly (1)" />
+        <item itemvalue="Jest.updating text " />
+        <item itemvalue="Jest.renders correctly" />
         <item itemvalue="Jest.posting task should update storage and navigate to home" />
-        <item itemvalue="Jest.posting empty task should prevent storage update" />
-        <item itemvalue="Jest.toggle modal should update visible state" />
-        <item itemvalue="Jest.toggle DateTimePicker should update visible state" />
-        <item itemvalue="Jest.choosing date updates deadline state" />
       </list>
     </recent_temporary>
   </component>
@@ -475,51 +396,51 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="renders_correctly_for_image_type - 2018.10.16 at 16h 21m 46s.xml">
-      <configuration name="renders correctly for image type" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="updating_text_ - 2018.10.16 at 17h 01m 44s.xml">
+      <configuration name="updating text " configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="updates_image_correctly - 2018.10.16 at 16h 21m 54s.xml">
-      <configuration name="updates image correctly" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="updating_text_ - 2018.10.16 at 17h 02m 05s.xml">
+      <configuration name="updating text " configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="choosing_image_from_camera_runs_correctly - 2018.10.16 at 16h 22m 02s.xml">
-      <configuration name="choosing image from camera runs correctly" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="updating_text_ - 2018.10.16 at 17h 02m 48s.xml">
+      <configuration name="updating text " configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="choosing_image_from_library_runs_correctly - 2018.10.16 at 16h 22m 09s.xml">
-      <configuration name="choosing image from library runs correctly" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="Run_tests_with_coverage - 2018.10.16 at 17h 03m 02s.xml">
+      <configuration name="Run tests with coverage" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="writing_text_updates_data_state - 2018.10.16 at 16h 22m 18s.xml">
-      <configuration name="writing text updates data state" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="renders_correctly_(1) - 2018.10.16 at 17h 06m 49s.xml">
+      <configuration name="renders correctly (1)" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="choosing_date_updates_deadline_state - 2018.10.16 at 16h 22m 25s.xml">
-      <configuration name="choosing date updates deadline state" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="updating_text_should_call_updateStepsText_function - 2018.10.16 at 17h 06m 58s.xml">
+      <configuration name="updating text should call updateStepsText function" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="toggle_DateTimePicker_should_update_visible_state - 2018.10.16 at 16h 22m 32s.xml">
-      <configuration name="toggle DateTimePicker should update visible state" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="updating_text_should_call_updateStepsText_function - 2018.10.16 at 17h 07m 34s.xml">
+      <configuration name="updating text should call updateStepsText function" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="toggle_modal_should_update_visible_state - 2018.10.16 at 16h 22m 39s.xml">
-      <configuration name="toggle modal should update visible state" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="updating_text_should_call_updateStepsText_function - 2018.10.16 at 17h 07m 57s.xml">
+      <configuration name="updating text should call updateStepsText function" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="posting_empty_task_should_prevent_storage_update - 2018.10.16 at 16h 22m 46s.xml">
-      <configuration name="posting empty task should prevent storage update" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="Run_tests_with_coverage - 2018.10.16 at 17h 08m 12s.xml">
+      <configuration name="Run tests with coverage" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="posting_task_should_update_storage_and_navigate_to_home - 2018.10.16 at 16h 22m 54s.xml">
-      <configuration name="posting task should update storage and navigate to home" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="Run_tests_with_coverage - 2018.10.16 at 17h 09m 00s.xml">
+      <configuration name="Run tests with coverage" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74176000" />
+    <option name="totallyTimeSpent" value="3290000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18809272" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18809272" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.41323212" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.41323212" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -562,256 +483,23 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/components/CheckboxComponent/styles/styles.js">
+    <entry file="file://$PROJECT_DIR$/components/CreateTaskViewComponent/__tests__/CreateTaskViewComponent-test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/HomeViewComponent/styles/styles.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="2" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/ChooseImageComponent/styles/styles.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/CreateImageTaskViewComponent/styles/styles.js" />
-    <entry file="file://$PROJECT_DIR$/components/UploadImageModalComponent/UploadImageModalComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/UploadImageModalComponent/styles/styles.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="2" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/CreateImageTaskViewComponent/CreateImageTaskView.js" />
-    <entry file="file://$PROJECT_DIR$/components/ChooseTextComponent/styles/styles.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/CreateTaskViewComponent/styles/styles.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/TaskContainerComponent/styles/styles.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="755">
-          <caret line="50" column="6" selection-start-line="50" selection-start-column="6" selection-end-line="50" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/MotivationalQuoteComponent/MotivationalQuoteComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/MotivationalQuoteComponent/styles/styles.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/AsyncStorage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/__tests__/__snapshots__/CheckboxComponent-test.js.snap" />
-    <entry file="file://$PROJECT_DIR$/__tests__/__snapshots__/TaskContainerComponent-test.js.snap" />
-    <entry file="file://$PROJECT_DIR$/components/TaskContainerComponent/__tests__/TaskContainerComponent-test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-native-modal-datetime-picker/src/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" lean-forward="true" selection-start-column="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/TaskContainerComponent/TaskContainerComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/FABComponent/FABComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="23" column="76" selection-start-line="23" selection-start-column="76" selection-end-line="23" selection-end-column="76" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#91#145#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/CreateTaskViewComponent/__tests__/__snapshots__/CreateTaskViewComponent-test.js.snap" />
-    <entry file="file://$PROJECT_DIR$/components/HomeViewComponent/HomeView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-331">
-          <caret line="131" column="5" selection-start-line="131" selection-start-column="5" selection-end-line="131" selection-end-column="5" />
+        <state relative-caret-position="323">
+          <caret line="145" column="60" selection-start-line="145" selection-start-column="60" selection-end-line="145" selection-end-column="60" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/expo/src/Expo.js">
+    <entry file="file://$PROJECT_DIR$/components/CreateTaskViewComponent/CreateTaskView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="217" column="29" selection-start-line="217" selection-start-column="29" selection-end-line="217" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/expo/src/Pedometer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/invariant/invariant.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/CheckboxComponent/CheckboxComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/FABComponent/__tests__/FabComponent-test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-end-line="10" />
+        <state relative-caret-position="265">
+          <caret line="61" column="8" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="8" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/ChooseImageComponent/__tests__/ChooseImageComponent-test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="70" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="70" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.babelrc">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/ChooseTextComponent/ChooseTextComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="68" selection-start-line="20" selection-start-column="68" selection-end-line="20" selection-end-column="68" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/ChooseImageComponent/ChooseImageComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#0#65#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/CheckboxComponent/__tests__/CheckboxComponent-test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/ChooseTextComponent/__tests__/ChooseTextComponent-test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/HomeViewComponent/__tests__/HomeViewComponent-test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/__mocks__/Permissions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -822,34 +510,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/__mocks__/expo.js">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        <state relative-caret-position="344">
+          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/__mocks__/react-native-modal-datetime-picker.js">
+    <entry file="file://$PROJECT_DIR$/components/ChooseStepCounterComponent/ChooseStepCounterComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/CreateTaskViewComponent/CreateTaskView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
+        <state>
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/CreateTaskViewComponent/__tests__/CreateTaskViewComponent-test.js">
+    <entry file="file://$PROJECT_DIR$/components/ChooseTextComponent/__tests__/ChooseTextComponent-test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="149" lean-forward="true" selection-start-line="149" selection-end-line="149" />
+        <state relative-caret-position="323">
+          <caret line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/__mocks__/Permissions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/ChooseStepCounterComponent/__tests__/ChooseStepCounterComponent-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/ChooseTextComponent/ChooseTextComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/HomeViewComponent/HomeView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

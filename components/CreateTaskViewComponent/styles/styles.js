@@ -62,7 +62,7 @@ export default StyleSheet.create({
         shadowRadius: 3,
         elevation: 1,
         position: 'absolute',
-        bottom: 30,
+        bottom: 50,
         alignItems: 'center',
         justifyContent: 'center',
     },
@@ -71,12 +71,4 @@ export default StyleSheet.create({
         fontWeight: "bold",
         color: '#fff',
     },
-    deadlineLabelView:{
-
-
-    },
-    deadlineLabel:{
-
-
-    }
 })
