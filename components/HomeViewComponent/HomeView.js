@@ -2,7 +2,7 @@ import React from 'react';
 import {Platform, Alert, View, ScrollView, SafeAreaView, TouchableHighlight} from 'react-native';
 import styles from './styles/styles'
 import FABComponent from '../../components/FABComponent/FABComponent.js'
-import { RetrieveTodos, Clear, RemoveTodo, StoreTodos} from '../../util/AsyncStorage'
+import { RetrieveTodos, Clear, StoreTodos} from '../../util/AsyncStorage'
 import TaskContainerComponent from '../TaskContainerComponent/TaskContainerComponent'
 import {Ionicons} from "@expo/vector-icons";
 import {Pedometer} from "expo";
@@ -18,7 +18,7 @@ export default class HomeView extends React.Component {
         this.state = {
             todos: null,
             isPedometerAvailable: "checking",
-            currentStepCount: 0,
+            stepsMade: 0,
             numTodos: 0,
         };
     }
@@ -32,10 +32,13 @@ export default class HomeView extends React.Component {
 
             let todos = JSON.parse(this.state.todos);
 
+            let deltaValue = parseInt(result.steps) - parseInt(this.state.stepsMade);
+            this.setState({ stepsMade: result.steps });
+
             for (let index in todos) {
                 if (todos[index].type === 'steps') {
                     let data = todos[index].data.split('/');
-                    let test = parseInt(result.steps) + parseInt(data[0]) + '/' + data[1];
+                    let test = parseInt(deltaValue) + parseInt(data[0]) + '/' + data[1];
                     todos[index].data = test;
                 }
             }
@@ -66,11 +69,12 @@ export default class HomeView extends React.Component {
         this._subscription = null;
     };
 
+
     componentWillMount() {
-        this.props.navigation.setParams({ handleIconTouch:
+            this.props.navigation.setParams({ handleIconTouch:
             this.handleIconTouch });
-        this._unsubscribe();
     }
+
 
     handleIconTouch = (title, message) => {
         let todos = JSON.parse(this.state.todos);
