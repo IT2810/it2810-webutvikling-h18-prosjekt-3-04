@@ -1,27 +1,5 @@
 import { AsyncStorage } from "react-native";
-
-export async function AddInitialTodos() {
-    try {
-        let initialList = [
-                {
-                    data: 'This is a test',
-                    deadline: '19.10.2018',
-                    type: 'text'
-                },
-                {
-                    data: 'This is also a test',
-                    deadline: 'No deadline',
-                    type: 'text'
-                },
-        ];
-
-        await AsyncStorage.setItem('todos', JSON.stringify(initialList));
-        console.log('Added initial todos');
-    } catch (error) {
-        alert(error);
-    }
-}
-
+//Retrieve all tasks
 export async function RetrieveTodos() {
     try {
         return await AsyncStorage.getItem('todos', null);
@@ -29,7 +7,7 @@ export async function RetrieveTodos() {
         alert(error);
     }
 }
-
+//Add all tasks
 export async function StoreTodos(todos) {
     try {
         await AsyncStorage.setItem('todos', JSON.stringify(todos));
@@ -37,7 +15,7 @@ export async function StoreTodos(todos) {
         alert(error);
     }
 }
-
+//Add one task
 export async function AddTodo(todo) {
     try {
         const todoString = await RetrieveTodos();
@@ -52,18 +30,7 @@ export async function AddTodo(todo) {
         alert(error);
     }
 }
-
-export async function RemoveTodo(todos) {
-    try {
-        const todoString = await RetrieveTodos();
-        let todos = JSON.parse(todoString);
-        todos.splice(index, 1);
-        await AsyncStorage.setItem('todos', JSON.stringify(todos));
-    } catch (error) {
-        alert(error);
-    }
-}
-
+//Remove all tasks
 export async function Clear() {
     try {
         await AsyncStorage.clear();

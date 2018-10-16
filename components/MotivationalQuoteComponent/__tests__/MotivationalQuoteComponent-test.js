@@ -3,8 +3,13 @@ import MotivationalQuoteComponent from '../MotivationalQuoteComponent';
 import renderer from 'react-test-renderer';
 
 
-test('renders correctly', () => {
-    const testCreateTaskViewComponent = <MotivationalQuoteComponent/>;
-    const tree = renderer.create(testCreateTaskViewComponent).toJSON();
+
+test('renders correctly with no elemtents', () => {
+    const tree = renderer.create(<MotivationalQuoteComponent numTodos={0}/>).toJSON();
+    expect(tree).toMatchSnapshot();
+});
+
+test('renders correctly with several elemtents', () => {
+    const tree = renderer.create(<MotivationalQuoteComponent numTodos={2}/>).toJSON();
     expect(tree).toMatchSnapshot();
 });

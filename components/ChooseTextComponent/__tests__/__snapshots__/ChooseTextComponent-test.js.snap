@@ -3,6 +3,7 @@
 exports[`renders correctly 1`] = `
 <TextInput
   allowFontScaling={true}
+  autoCorrect={false}
   blurOnSubmit={true}
   containerViewStyle={
     Object {
@@ -29,8 +30,10 @@ exports[`renders correctly 1`] = `
       "marginBottom": 20,
       "marginTop": 20,
       "padding": 10,
+      "textAlignVertical": "top",
       "width": "90%",
     }
   }
+  underlineColorAndroid="rgba(0,0,0,0)"
 />
 `;
