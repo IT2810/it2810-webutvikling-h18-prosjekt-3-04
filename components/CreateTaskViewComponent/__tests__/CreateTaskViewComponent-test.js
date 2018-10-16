@@ -111,6 +111,11 @@ test('writing text updates data state', () => {
     expect(component.state.currentTask.data).toBe('This is text');
 });
 
+test('writing steps text updates data state', () => {
+    component._updateStepsText('This is step text');
+    expect(component.state.currentTask.data).toBe('0/'+'This is step text');
+});
+
 test('choosing date updates deadline state', () => {
     component._handleDatePicked('Tue Oct 16 2018 19:24:08 GMT+0200 (CEST)');
     expect(component.state.currentTask.deadline).toBe('Tue Oct 16 2018 at 19:24');
@@ -136,14 +141,21 @@ test('posting empty task should prevent storage update', async() => {
     });
 
     await component._postTask();
-    expect(component.props.navigation.navigate).not.toBeCalled();
+    expect(navigate).not.toBeCalled();
     expect(component.state.currentTask.data).toBeNull();
 });
 
 test('posting task should update storage and navigate to home', async() => {
+    let navigation2 = {
+        navigate: jest.fn(),
+        getParam: jest.fn()
+    };
+    const testCreateTaskViewComponent = <CreateTaskView navigation={navigation2}/>;
+    component = renderer.create(testCreateTaskViewComponent).getInstance();
+
     component._updateText('This is text');
     await component._postTask();
     expect(component.state.currentTask.data).not.toBeNull();
-    expect(component.props.navigation.navigate).toBeCalled();
+    expect(navigation2.navigate).toBeCalled();
     expect(AddTodo).toBeCalled();
 });

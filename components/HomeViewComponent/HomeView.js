@@ -27,7 +27,7 @@ export default class HomeView extends React.Component {
         this._unsubscribe();
     }
 
-    _subscribe = () => {
+    _subscribe = async() => {
         this._subscription = Pedometer.watchStepCount(result => {
 
             let todos = JSON.parse(this.state.todos);
@@ -44,24 +44,11 @@ export default class HomeView extends React.Component {
             }
 
             StoreTodos(todos);
-
-            this.setState({
-                todos: JSON.stringify(todos)
-            });
+            this.setState({todos: JSON.stringify(todos)});
         });
 
-        Pedometer.isAvailableAsync().then(
-            result => {
-                this.setState({
-                    isPedometerAvailable: String(result)
-                });
-            },
-            error => {
-                this.setState({
-                    isPedometerAvailable: "Could not get isPedometerAvailable: " + error
-                });
-            }
-        );
+        const result = await Pedometer.isAvailableAsync();
+        this.setState({isPedometerAvailable: String(result)});
     };
 
     _unsubscribe = () => {
@@ -93,11 +80,10 @@ export default class HomeView extends React.Component {
         }
 
         Alert.alert(title, message, [
-            {text: 'Cancel', onPress: () => console.log('Cancel Pressed'), style: 'cancel'},
-            {text: 'Yes please', onPress: () => this.deleteSelectedTasks()},
+            {text: 'Cancel', onPress: console.log('Cancel Pressed'), style: 'cancel'},
+            {text: 'Yes please', onPress: this.deleteSelectedTasks},
         ])
     };
-
 
     deleteSelectedTasks = () =>{
         let todos = JSON.parse(this.state.todos);
@@ -144,12 +130,7 @@ export default class HomeView extends React.Component {
         this._getStoredTasks();
 
         // Add listener to update feed when returning to home-screen
-        const didBlurSubscription = this.props.navigation.addListener(
-            'didFocus',
-            payload => {
-                this._getStoredTasks();
-            }
-        );
+        const didBlurSubscription = this.props.navigation.addListener('didFocus', this._getStoredTasks);
 
         if (Platform.OS === 'ios') {
             this._subscribe();
@@ -208,6 +189,4 @@ export default class HomeView extends React.Component {
             </SafeAreaView>
         );
     }
-
-
 }

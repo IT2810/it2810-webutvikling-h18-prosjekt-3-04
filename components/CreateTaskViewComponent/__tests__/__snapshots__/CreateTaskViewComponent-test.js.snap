@@ -112,7 +112,7 @@ exports[`renders correctly for image type 1`] = `
           "backgroundColor": "rgba(255,255,255,0)",
           "display": "flex",
           "flex": 1,
-          "justifyContent": "flex-end",
+          "justifyContent": "center",
           "margin": 37.5,
           "transform": Array [
             Object {
@@ -182,7 +182,7 @@ exports[`renders correctly for image type 1`] = `
                   Object {
                     "backgroundColor": "#ff0042",
                     "borderRadius": 10,
-                    "margin": 1,
+                    "margin": 5,
                     "width": "100%",
                   },
                   undefined,
@@ -280,7 +280,7 @@ exports[`renders correctly for image type 1`] = `
                   Object {
                     "backgroundColor": "#ff0042",
                     "borderRadius": 10,
-                    "margin": 1,
+                    "margin": 5,
                     "width": "100%",
                   },
                   undefined,
@@ -394,7 +394,7 @@ exports[`renders correctly for image type 1`] = `
         "borderColor": "#ff0042",
         "borderRadius": 20,
         "borderWidth": 1,
-        "bottom": 30,
+        "bottom": 50,
         "elevation": 1,
         "height": 50,
         "justifyContent": "center",
@@ -441,6 +441,7 @@ exports[`renders correctly for text type 1`] = `
 >
   <TextInput
     allowFontScaling={true}
+    autoCorrect={false}
     blurOnSubmit={true}
     containerViewStyle={
       Object {
@@ -467,9 +468,11 @@ exports[`renders correctly for text type 1`] = `
         "marginBottom": 20,
         "marginTop": 20,
         "padding": 10,
+        "textAlignVertical": "top",
         "width": "90%",
       }
     }
+    underlineColorAndroid="rgba(0,0,0,0)"
   />
   <View
     accessible={true}
@@ -535,7 +538,7 @@ exports[`renders correctly for text type 1`] = `
         "borderColor": "#ff0042",
         "borderRadius": 20,
         "borderWidth": 1,
-        "bottom": 30,
+        "bottom": 50,
         "elevation": 1,
         "height": 50,
         "justifyContent": "center",

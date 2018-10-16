@@ -54,7 +54,7 @@ exports[`renders correctly 1`] = `
         "backgroundColor": "rgba(255,255,255,0)",
         "display": "flex",
         "flex": 1,
-        "justifyContent": "flex-end",
+        "justifyContent": "center",
         "margin": 37.5,
         "transform": Array [
           Object {
@@ -124,7 +124,7 @@ exports[`renders correctly 1`] = `
                 Object {
                   "backgroundColor": "#ff0042",
                   "borderRadius": 10,
-                  "margin": 1,
+                  "margin": 5,
                   "width": "100%",
                 },
                 undefined,
@@ -222,7 +222,7 @@ exports[`renders correctly 1`] = `
                 Object {
                   "backgroundColor": "#ff0042",
                   "borderRadius": 10,
-                  "margin": 1,
+                  "margin": 5,
                   "width": "100%",
                 },
                 undefined,
