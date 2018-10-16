@@ -10,10 +10,12 @@ test('renders correctly with type = text', () => {
     const tree = renderer.create(<TaskContainerComponent type={'text'}/>).toJSON();
     expect(tree).toMatchSnapshot();
 });
+
 test('renders correctly with type = image', () => {
     const tree = renderer.create(<TaskContainerComponent type={'image'}/>).toJSON();
     expect(tree).toMatchSnapshot();
 });
+
 test('renders correctly with type = image', () => {
     const tree = renderer.create(<TaskContainerComponent type={'steps'} data={'0/0'}/>).toJSON();
     expect(tree).toMatchSnapshot();
