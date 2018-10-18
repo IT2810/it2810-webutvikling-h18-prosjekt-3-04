@@ -5,7 +5,7 @@ import {Button} from "react-native-elements";
 import Modal from "react-native-modal";
 import PropTypes from 'prop-types'
 
-
+// This is the modal that pops up when u want to choose an image to upload.
 export default class UploadImageModalComponent extends React.Component {
 
     static propTypes = {

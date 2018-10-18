@@ -35,16 +35,16 @@ test('Test that RetrieveTodos works', async () => {
         type: "this is a type"
     }
     ));
+
+    // RetrieveTodos should call AsyncStorage.getItem and return object defined above
     const result = await RetrieveTodos(testTodo);
     expect(result).toEqual(testTodo);
     expect(result).not.toEqual(anotherTodo);
 });
 
-test('Test that Clear throws alert', async () => {
-    await Clear();
-});
-
 test('Test that StoreTodos works', async () => {
+
+    // Update AsyncStorage first
     AsyncStorage.setItems.mockImplementation(()=>(
         [{
             date: "this is a date",
@@ -59,6 +59,7 @@ test('Test that StoreTodos works', async () => {
     ));
     await StoreTodos(testTodo,anotherTodo);
 
+    // Test that retrieve function calls AsyncStorage.getItem and returns correct object.
     AsyncStorage.getItem.mockImplementation(()=>([
         {
             date: "this is a date",
@@ -77,23 +78,8 @@ test('Test that StoreTodos works', async () => {
 
 
 test('Test that Clear works', async () => {
-    AsyncStorage.setItems.mockImplementation(()=>(
-        {
-            date: "this is a date",
-            deadline: "this is a deadline",
-            type: "this is a type"
-        }
-    ));
-
-    await StoreTodos(testTodo,anotherTodo);
-
     await Clear();
-
-    AsyncStorage.getItem.mockImplementation(()=>(
-        undefined
-    ));
-    const result = await RetrieveTodos();
-    expect(result).toBe(undefined)
+    expect(AsyncStorage.clear).toBeCalled()
 });
 
 test('Test that AddTodo works', async () => {
@@ -106,6 +92,7 @@ test('Test that AddTodo works', async () => {
     ));
     await AddTodo(testTodo);
 
+    // Test that values in AsyncStorage are the same as the ones we added earlier
     AsyncStorage.getItem.mockImplementation(()=>({
         date: "this is a date",
         deadline: "this is a deadline",
@@ -114,6 +101,7 @@ test('Test that AddTodo works', async () => {
     const result = await RetrieveTodos();
     expect(result).toEqual(testTodo);
 });
+
 
 test('Test that AddTodo todoString = null  works', async () => {
     AsyncStorage.setItems.mockImplementation(()=>(
@@ -140,13 +128,16 @@ test('Test that AddTodo todoString = null  works', async () => {
     expect(result).toEqual([testTodo,anotherTodo]);
 });
 
-//This is to get full coverage by throwing alerts
+// Tests that alert is called when an error is thrown in clear-function
 test('Test Clear-alert', async () => {
     AsyncStorage.clear.mockImplementation(()=>"this".shouldThrowAnError());
     await Clear();
+    expect(global.alert).toBeCalled()
 });
-//This is to get full coverage by throwing alerts
+
+// Tests that alert is called when an error is thrown in RetrieveTodos-function
 test('Test RetrieveTodos-alert', async () => {
     AsyncStorage.getItem.mockImplementation(()=>"this".shouldThrowAnError());
     await RetrieveTodos();
+    expect(global.alert).toBeCalled()
 });

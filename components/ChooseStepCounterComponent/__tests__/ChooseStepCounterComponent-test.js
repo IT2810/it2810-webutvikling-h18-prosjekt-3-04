@@ -3,6 +3,7 @@ import ChooseStepCounterComponent from '../ChooseStepCounterComponent';
 import renderer from 'react-test-renderer';
 import ShallowRenderer from 'react-test-renderer/shallow'
 
+// Mock update function since were only testing whether the function is called.
 let updateStepsText = jest.fn();
 
 test('renders correctly', () => {

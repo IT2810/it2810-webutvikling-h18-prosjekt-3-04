@@ -1,8 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-
 export default StyleSheet.create({
-
     image: {
         borderColor: '#d6d6d6',
         borderWidth: 2,

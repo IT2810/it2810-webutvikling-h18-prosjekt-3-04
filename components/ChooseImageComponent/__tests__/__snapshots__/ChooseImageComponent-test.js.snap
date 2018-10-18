@@ -23,7 +23,7 @@ exports[`renders correctly 1`] = `
   <Image
     source={
       Object {
-        "uri": "data:image/jpeg;base64,data:image/jpeg;base64,testestestestestestestest",
+        "uri": "data:image/jpeg;base64,testestestestestestestest",
       }
     }
     style={

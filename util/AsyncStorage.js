@@ -1,4 +1,5 @@
 import { AsyncStorage } from "react-native";
+
 //Retrieve all tasks
 export async function RetrieveTodos() {
     try {
@@ -7,6 +8,7 @@ export async function RetrieveTodos() {
         alert(error);
     }
 }
+
 //Add all tasks
 export async function StoreTodos(todos) {
     try {
@@ -15,6 +17,7 @@ export async function StoreTodos(todos) {
         alert(error);
     }
 }
+
 //Add one task
 export async function AddTodo(todo) {
     try {
@@ -30,6 +33,7 @@ export async function AddTodo(todo) {
         alert(error);
     }
 }
+
 //Remove all tasks
 export async function Clear() {
     try {

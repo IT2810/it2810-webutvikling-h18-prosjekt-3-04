@@ -3,7 +3,7 @@ import { Dimensions } from "react-native";
 let width = Dimensions.get('window').width; //full width
 
 export default StyleSheet.create({
-    taskObject:{
+    taskObject: {
         backgroundColor: "#FFF",
         borderRadius: 20,
         width:width-40,
@@ -22,25 +22,30 @@ export default StyleSheet.create({
         shadowOffset:{height: 2},
         elevation:1,
     },
-    textFlex:{
+
+    textFlex: {
         width: 200,
         alignSelf: "center",
     },
-    taskText:{
+
+    taskText: {
         fontSize:17,
         fontWeight: 'bold',
     },
-    checkFlex:{
+
+    checkFlex: {
         width:40,
         flex: 1,
         justifyContent: 'center',
         alignItems: 'flex-end'
     },
-    dateStyle:{
+
+    dateStyle: {
         marginTop:10,
         color: "#FF0040",
     },
-    image:{
+
+    image: {
         width:170,
         aspectRatio:1,
         marginLeft:-30,

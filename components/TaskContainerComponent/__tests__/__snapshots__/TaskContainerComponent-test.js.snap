@@ -48,7 +48,7 @@ exports[`renders correctly with type = image 1`] = `
       <Image
         source={
           Object {
-            "uri": "data:image/jpeg;base64,undefined",
+            "uri": undefined,
           }
         }
         style={
@@ -116,7 +116,7 @@ exports[`renders correctly with type = image 1`] = `
 </View>
 `;
 
-exports[`renders correctly with type = image 2`] = `
+exports[`renders correctly with type = steps 1`] = `
 <View
   accessible={true}
   isTVSelectable={true}

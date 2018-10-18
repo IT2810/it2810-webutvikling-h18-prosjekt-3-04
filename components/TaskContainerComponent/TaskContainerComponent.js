@@ -4,7 +4,8 @@ import styles from "./styles/styles";
 import CheckboxComponent from '../CheckboxComponent/CheckboxComponent';
 import PropTypes from 'prop-types';
 
-
+// This component represents a single task-object of any type.
+// On the homescreen, this component is what u see when a task is made
 export default class TaskContainerComponent extends Component{
 
     static propTypes = {
@@ -17,10 +18,11 @@ export default class TaskContainerComponent extends Component{
         id: PropTypes.number,
     };
 
-
+    // Since a task can be of several types,
+    // this function ensures that the correct task-type is rendered.
     renderTaskObject(){
         if (this.props.type === "image"){
-           return <Image style={styles.image} source={{uri: 'data:image/jpeg;base64,' + this.props.data}}/>
+           return <Image style={styles.image} source={{uri: this.props.data}}/>
         }
         else if (this.props.type === "steps"){
             let data = this.props.data.split('/');

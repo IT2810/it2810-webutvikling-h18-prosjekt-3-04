@@ -9,24 +9,22 @@ export default StyleSheet.create({
         marginTop:10,
         paddingBottom:20,
     },
-    safeAreaView:{
+
+    safeAreaView: {
         flex: 1,
         backgroundColor: '#f9f9f9'
     },
-    viewWrapper:{
+
+    viewWrapper: {
         minHeight: '90%',
     },
-    text: {
-        color: '#ff0042',
-        letterSpacing: 5,
-        fontSize: 20,
-        fontWeight: "bold",
-    },
-    rightButtonItem:{
+
+    rightButtonItem: {
         width: 80,
         backgroundColor:'transparent'
     },
-    iconView:{
+
+    iconView: {
         marginLeft: 40,
     }
 

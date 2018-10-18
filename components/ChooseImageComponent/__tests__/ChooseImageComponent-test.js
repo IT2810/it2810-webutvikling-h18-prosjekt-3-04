@@ -1,7 +1,5 @@
 import React from 'react';
 import ChooseImageComponent from '../ChooseImageComponent';
-import TaskContainerComponent from '../../TaskContainerComponent/TaskContainerComponent';
-
 import renderer from 'react-test-renderer';
 
 

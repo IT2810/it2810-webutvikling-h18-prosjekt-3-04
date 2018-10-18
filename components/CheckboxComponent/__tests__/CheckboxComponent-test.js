@@ -1,6 +1,5 @@
 import React from 'react';
 import CheckboxComponent from '../CheckboxComponent';
-
 import renderer from 'react-test-renderer';
 
 

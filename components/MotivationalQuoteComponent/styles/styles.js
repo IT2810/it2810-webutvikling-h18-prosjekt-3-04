@@ -7,7 +7,6 @@ export default StyleSheet.create({
         height:90,
         marginTop:15,
         width:width-40,
-
     },
 
     motivationalText: {

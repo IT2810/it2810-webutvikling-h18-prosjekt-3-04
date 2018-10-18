@@ -4,6 +4,7 @@ import renderer from 'react-test-renderer';
 import {RequestPermission} from '../../../util/Permissions';
 import {AddTodo} from "../../../util/AsyncStorage";
 
+// Global variables
 let component;
 let getParam = jest.fn();
 let navigate = jest.fn();
@@ -12,12 +13,13 @@ let navigation = {
     getParam: getParam,
 };
 
+// Mocks
 jest.mock('../../../util/Permissions.js', () => ({
     RequestPermission: jest.fn(),
 }));
 
 jest.mock('expo', () => ({
-    ImageManipulator: {
+    ImageManipulator: { // ImageManipulator should return a base64-string when finished
         manipulate: () => ({ base64: 'base64string'}),
     },
     ImagePicker: {
@@ -30,7 +32,7 @@ jest.mock('../../../util/AsyncStorage.js', () => ({
     AddTodo: jest.fn(),
 }));
 
-
+// Generate fresh instance of module for each test
 beforeEach(() => {
     const testCreateTaskViewComponent = <CreateTaskView navigation={navigation}/>;
     component = renderer.create(testCreateTaskViewComponent).getInstance();
@@ -63,6 +65,7 @@ test('updates image correctly', async () => {
         cancelled: true,
     };
 
+    // Data should not update if user does not choose image
     await component._updateImage(result);
     expect(component.state.currentTask.data).toBeNull();
 
@@ -70,21 +73,24 @@ test('updates image correctly', async () => {
         cancelled: false,
     };
 
+    // Data should update with base64-string if an image is chosen.
     await component._updateImage(result);
-    expect(component.state.currentTask.data).toBe('base64string');
+    expect(component.state.currentTask.data).toBe('data:image/jpeg;base64,base64string');
 });
 
 test('choosing image from camera runs correctly', async () => {
 
+    // If permissions are granted, data state should update with base64-string
     RequestPermission.mockImplementation(() => true );
     await component._pickCameraImage();
-    expect(component.state.currentTask.data).toBe('base64string');
+    expect(component.state.currentTask.data).toBe('data:image/jpeg;base64,base64string');
 
     component.setState({ currentTask: {
         type: 'image',
         data: null
     }});
 
+    // If permissions are not granted, state should not update and data should be null
     RequestPermission.mockImplementation(() => false );
     await component._pickCameraImage();
     expect(component.state.currentTask.data).toBeNull();
@@ -92,15 +98,18 @@ test('choosing image from camera runs correctly', async () => {
 });
 
 test('choosing image from library runs correctly', async () => {
+
+    // If permissions are granted, data state should update with base64-string
     RequestPermission.mockImplementation(() => true );
     await component._pickImage();
-    expect(component.state.currentTask.data).toBe('base64string');
+    expect(component.state.currentTask.data).toBe('data:image/jpeg;base64,base64string');
 
     component.setState({ currentTask: {
             type: 'image',
             data: null
         }});
 
+    // If permissions are not granted, state should not update and data should be null
     RequestPermission.mockImplementation(() => false );
     await component._pickImage();
     expect(component.state.currentTask.data).toBeNull();
@@ -140,6 +149,7 @@ test('posting empty task should prevent storage update', async() => {
         console.log('Alert called')
     });
 
+    // Data is null when postTask is called here
     await component._postTask();
     expect(navigate).not.toBeCalled();
     expect(component.state.currentTask.data).toBeNull();
@@ -153,6 +163,8 @@ test('posting task should update storage and navigate to home', async() => {
     const testCreateTaskViewComponent = <CreateTaskView navigation={navigation2}/>;
     component = renderer.create(testCreateTaskViewComponent).getInstance();
 
+    // Same as last text, but we update data state with text before calling postTask.
+    // Navigate should be called after updating AsyncStorage
     component._updateText('This is text');
     await component._postTask();
     expect(component.state.currentTask.data).not.toBeNull();

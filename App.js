@@ -11,12 +11,13 @@ export default class App extends React.Component {
     }
 }
 
+// Creates app header for each view.
 const AppWithNavigation = createStackNavigator(
     {
         Home: HomeView,
         NewTask: CreateTaskView,
     },
     {
-        initialRouteName: 'Home',
+        initialRouteName: 'Home', // defines which view to open on startup
     }
 );

@@ -1,10 +1,8 @@
 import React from 'react';
 import FabComponent from '../FABComponent';
-
 import renderer from 'react-test-renderer';
-import ShallowRenderer from "react-test-renderer/shallow";
 
-//Simulate Android platform
+//Simulate Android platform since step-task should be unavailable here
 jest.mock('Platform', () => {
     const Platform = require.requireActual('Platform');
     Platform.OS = 'android';
@@ -22,4 +20,3 @@ test('renders correctly', () => {
     const tree = renderer.create(<FabComponent navigation={navigation}/>).toJSON();
     expect(tree).toMatchSnapshot();
 });
-

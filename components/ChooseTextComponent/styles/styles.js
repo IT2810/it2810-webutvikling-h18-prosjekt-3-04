@@ -1,7 +1,7 @@
 import {StyleSheet} from 'react-native';
 
 export default StyleSheet.create({
-    textInputField:{
+    textInputField: {
         height: 200,
         borderRadius: 15,
         borderWidth: 1,
@@ -15,4 +15,10 @@ export default StyleSheet.create({
         fontWeight:"bold",
         textAlignVertical: "top",
     },
+
+    textContainer: {
+        marginLeft:-10,
+        marginRight:null,
+        width:"105%",
+    }
 })

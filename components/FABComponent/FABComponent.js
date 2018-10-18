@@ -1,10 +1,14 @@
 import React from 'react';
 import ActionButton from 'react-native-action-button'; // 2.7.2
 import Icon from 'react-native-vector-icons/Ionicons';
-import {Platform, StyleSheet} from "react-native"; // 4.2.0
+import {Platform} from "react-native"; // 4.2.0
+import styles from './styles/styles';
 
-class FABComponent extends React.Component {
+// This is the component in the lower right corner of the homeview.
+// It allows a user to create a new task for a specific type.
+export default class FABComponent extends React.Component {
 
+    // Step-counter task only available for iOS due to pedometer issue in Android.
     renderiOSComponent() {
         if (Platform.OS === 'ios') {
             return (
@@ -38,17 +42,3 @@ class FABComponent extends React.Component {
         );
     }
 }
-
-const styles = StyleSheet.create({
-    actionButtonIcon: {
-        fontSize: 20,
-        height: 22,
-        color: 'white',
-    },
-    FAB: {
-        bottom:30,
-        right: 0,
-    },
-});
-
-export default FABComponent;

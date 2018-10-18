@@ -3,6 +3,7 @@ import ChooseTextComponent from '../ChooseTextComponent';
 import renderer from 'react-test-renderer';
 import ShallowRenderer from 'react-test-renderer/shallow'
 
+// Mock update function since were only testing that its called.
 let updateText = jest.fn();
 
 test('renders correctly', () => {

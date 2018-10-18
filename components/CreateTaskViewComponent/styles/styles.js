@@ -1,32 +1,12 @@
 import {StyleSheet} from 'react-native';
 
 export default StyleSheet.create({
-
     container: {
         flex: 1,
         backgroundColor: '#fff',
         alignItems: 'center',
     },
 
-    text: {
-        color: '#ff0042',
-        letterSpacing: 5,
-        fontSize: 20,
-        fontWeight: "bold",
-    },
-    textInputField:{
-        height: 200,
-        borderRadius: 15,
-        borderWidth: 1,
-        borderColor: '#f3f3f3',
-        backgroundColor:'#f3f3f3',
-        padding:10,
-        width: "90%",
-        marginTop:20,
-        marginBottom:20,
-        fontSize: 17,
-        fontWeight:"bold",
-    },
     deadlineBtn: {
         backgroundColor: '#a3052e',
         borderRadius:20,
@@ -40,7 +20,8 @@ export default StyleSheet.create({
         alignSelf:'flex-end',
         marginRight: '5%'
     },
-    buttonText: {
+
+    deadlineButtonText: {
         fontSize:15,
         fontWeight: "bold",
         paddingLeft: 10,
@@ -49,6 +30,7 @@ export default StyleSheet.create({
         paddingTop:5,
         color: '#fff',
     },
+
     createTaskButton: {
         backgroundColor: '#ff0042',
         height:50,
@@ -66,6 +48,7 @@ export default StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
+
     createTaskButtonText: {
         fontSize:15,
         fontWeight: "bold",

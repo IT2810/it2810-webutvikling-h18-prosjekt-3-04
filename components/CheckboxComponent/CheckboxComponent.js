@@ -4,7 +4,7 @@ import styles from "./styles/styles";
 import { Ionicons } from '@expo/vector-icons';
 import PropTypes from 'prop-types';
 
-
+// Small checkbox component used in task-objects
 export default class CheckboxComponent extends Component{
 
     static propTypes = {

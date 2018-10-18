@@ -3,6 +3,8 @@ import styles from "./styles/styles";
 import {Text, View} from "react-native";
 import PropTypes from 'prop-types'
 
+// This component contains the motivational quotes on the bottom of the home screen feed.
+// When a user has not yet created a task, this component shows a piece of text to get them started.
 export default class MotivationalQuoteComponent extends React.Component {
 
     constructor(props) {
@@ -13,14 +15,16 @@ export default class MotivationalQuoteComponent extends React.Component {
         };
     }
 
-    componentDidMount() {
-        this.newQuote();
-    }
-
     static propTypes = {
         numTodos: PropTypes.number,
     };
 
+    // Generates quote on startup
+    componentDidMount() {
+        this.newQuote();
+    }
+
+    // The dictionary of quotes
     motivationalQuotes = [
         "Just do it!",
         "You are doing great!",
@@ -51,6 +55,7 @@ export default class MotivationalQuoteComponent extends React.Component {
         "B U T L E R ❤️ you."
     ];
 
+    // Chooses a random quote if a task has been made. Otherwise, teaches users to create new tasks.
     newQuote = () => {
         if (this.props.numTodos > 0) {
             let rng = Math.floor(Math.random() * (this.motivationalQuotes.length - 1));

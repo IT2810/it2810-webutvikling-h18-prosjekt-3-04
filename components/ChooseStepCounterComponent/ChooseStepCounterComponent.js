@@ -3,6 +3,7 @@ import styles from "./styles/styles";
 import {Keyboard, TextInput} from "react-native";
 import PropTypes from 'prop-types'
 
+// Component for writing in a step goal for a stepcounter-task. Only available on iOS.
 export default class ChooseStepCounterComponent extends React.Component {
 
     static propTypes = {
@@ -13,8 +14,8 @@ export default class ChooseStepCounterComponent extends React.Component {
         return (
             <TextInput
                 style ={styles.textInputField}
-                containerViewStyle={{marginLeft:-10,marginRight:null,width:"105%"}}
-                placeholder={"Type in your step-goal 🤸🏼‍♀️"}
+                containerViewStyle={styles.textContainer}
+                placeholder={"Enter step-goal 🤸🏼‍♀️"}
                 keyboardType={"number-pad"}
                 multiline={false}
                 returnKeyType={"done"}

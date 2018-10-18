@@ -1,8 +1,9 @@
 import React from "react";
 import styles from "./styles/styles";
-import {Keyboard, View, TextInput, Text} from "react-native";
+import {Keyboard, TextInput} from "react-native";
 import PropTypes from 'prop-types'
 
+// Component for inputting text for a text-task.
 export default class ChooseTextComponent extends React.Component {
 
     static propTypes = {
@@ -13,7 +14,7 @@ export default class ChooseTextComponent extends React.Component {
         return (
             <TextInput
                 style ={styles.textInputField}
-                containerViewStyle={{marginLeft:-10,marginRight:null,width:"105%"}}
+                containerViewStyle={styles.textContainer}
                 placeholder={"Add some descriptive and motivating text to your task! 💪🏼"}
                 multiline={true}
                 underlineColorAndroid={'rgba(0,0,0,0)'}
