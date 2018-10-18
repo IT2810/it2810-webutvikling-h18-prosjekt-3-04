@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<TextInput
+  allowFontScaling={true}
+  blurOnSubmit={true}
+  containerViewStyle={
+    Object {
+      "marginLeft": -10,
+      "marginRight": null,
+      "width": "105%",
+    }
+  }
+  enablesReturnKeyAutomatically={true}
+  keyboardType="number-pad"
+  maxLength={14}
+  multiline={false}
+  onChangeText={[Function]}
+  onSubmitEditing={[Function]}
+  placeholder="Enter step-goal 🤸🏼‍♀️"
+  returnKeyType="done"
+  style={
+    Object {
+      "backgroundColor": "#f3f3f3",
+      "borderColor": "#f3f3f3",
+      "borderRadius": 15,
+      "borderWidth": 1,
+      "fontSize": 17,
+      "fontWeight": "bold",
+      "height": 50,
+      "marginBottom": 20,
+      "marginTop": 20,
+      "padding": 10,
+      "width": "65%",
+    }
+  }
+/>
+`;

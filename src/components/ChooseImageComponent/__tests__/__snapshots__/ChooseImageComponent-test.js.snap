@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "aspectRatio": 1,
+      "marginTop": 20,
+      "opacity": 1,
+      "width": "80%",
+    }
+  }
+>
+  <Image
+    source={
+      Object {
+        "uri": "data:image/jpeg;base64,testestestestestestestest",
+      }
+    }
+    style={
+      Object {
+        "alignItems": "center",
+        "aspectRatio": 1,
+        "backgroundColor": "#e8e8e8",
+        "borderColor": "#d6d6d6",
+        "borderRadius": 10,
+        "borderWidth": 2,
+        "display": "flex",
+        "justifyContent": "center",
+        "width": "90%",
+      }
+    }
+  />
+</View>
+`;
+
+exports[`renders correctly 2`] = `
+<View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "aspectRatio": 1,
+      "marginTop": 20,
+      "opacity": 1,
+      "width": "80%",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "aspectRatio": 1,
+        "backgroundColor": "#e8e8e8",
+        "borderColor": "#d6d6d6",
+        "borderRadius": 10,
+        "borderWidth": 2,
+        "display": "flex",
+        "justifyContent": "center",
+        "width": "90%",
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#d6d6d6",
+          "fontSize": 24,
+        }
+      }
+    >
+      +
+    </Text>
+  </View>
+</View>
+`;
