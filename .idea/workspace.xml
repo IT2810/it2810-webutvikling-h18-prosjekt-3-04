@@ -2,45 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c713ddf6-0fbe-4a2d-ac9a-9ac0dd182d2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/components/FABComponent/styles/styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/fa-solid-900.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CheckboxComponent/CheckboxComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/CheckboxComponent/CheckboxComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CheckboxComponent/__tests__/CheckboxComponent-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/CheckboxComponent/__tests__/CheckboxComponent-test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CheckboxComponent/styles/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/CheckboxComponent/styles/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ChooseImageComponent/ChooseImageComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/ChooseImageComponent/ChooseImageComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ChooseImageComponent/__tests__/ChooseImageComponent-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/ChooseImageComponent/__tests__/ChooseImageComponent-test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ChooseImageComponent/__tests__/__snapshots__/ChooseImageComponent-test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/components/ChooseImageComponent/__tests__/__snapshots__/ChooseImageComponent-test.js.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ChooseImageComponent/styles/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/ChooseImageComponent/styles/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ChooseStepCounterComponent/ChooseStepCounterComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/ChooseStepCounterComponent/ChooseStepCounterComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ChooseStepCounterComponent/__tests__/ChooseStepCounterComponent-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/ChooseStepCounterComponent/__tests__/ChooseStepCounterComponent-test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ChooseStepCounterComponent/styles/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/ChooseStepCounterComponent/styles/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ChooseTextComponent/ChooseTextComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/ChooseTextComponent/ChooseTextComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ChooseTextComponent/__tests__/ChooseTextComponent-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/ChooseTextComponent/__tests__/ChooseTextComponent-test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ChooseTextComponent/styles/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/ChooseTextComponent/styles/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CreateTaskViewComponent/CreateTaskView.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/CreateTaskViewComponent/CreateTaskView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CreateTaskViewComponent/__tests__/CreateTaskViewComponent-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/CreateTaskViewComponent/__tests__/CreateTaskViewComponent-test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CreateTaskViewComponent/styles/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/CreateTaskViewComponent/styles/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/FABComponent/FABComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/FABComponent/FABComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/FABComponent/__tests__/FabComponent-android-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/FABComponent/__tests__/FabComponent-android-test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/FABComponent/__tests__/FabComponent-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/FABComponent/__tests__/FabComponent-test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/HomeViewComponent/HomeView.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/HomeViewComponent/HomeView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/HomeViewComponent/__tests__/HomeViewComponent-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/HomeViewComponent/__tests__/HomeViewComponent-test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/HomeViewComponent/styles/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/HomeViewComponent/styles/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/MotivationalQuoteComponent/MotivationalQuoteComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/MotivationalQuoteComponent/MotivationalQuoteComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/MotivationalQuoteComponent/__tests__/MotivationalQuoteComponent-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/MotivationalQuoteComponent/__tests__/MotivationalQuoteComponent-test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/MotivationalQuoteComponent/styles/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/MotivationalQuoteComponent/styles/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/TaskContainerComponent/TaskContainerComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/TaskContainerComponent/TaskContainerComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/TaskContainerComponent/__tests__/TaskContainerComponent-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/TaskContainerComponent/__tests__/TaskContainerComponent-test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/TaskContainerComponent/__tests__/__snapshots__/TaskContainerComponent-test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/components/TaskContainerComponent/__tests__/__snapshots__/TaskContainerComponent-test.js.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/TaskContainerComponent/styles/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/TaskContainerComponent/styles/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/UploadImageModalComponent/UploadImageModalComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/UploadImageModalComponent/UploadImageModalComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/AsyncStorage.js" beforeDir="false" afterPath="$PROJECT_DIR$/util/AsyncStorage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/Permissions.js" beforeDir="false" afterPath="$PROJECT_DIR$/util/Permissions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/__tests__/AsyncStorage-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/util/__tests__/AsyncStorage-test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/__tests__/Permissions-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/util/__tests__/Permissions-test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/splash.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/splash.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/CheckboxComponent/CheckboxComponent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/CheckboxComponent/__tests__/CheckboxComponent-test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/CheckboxComponent/__tests__/__snapshots__/CheckboxComponent-test.js.snap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/CheckboxComponent/styles/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ChooseImageComponent/ChooseImageComponent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ChooseImageComponent/__tests__/ChooseImageComponent-test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ChooseImageComponent/__tests__/__snapshots__/ChooseImageComponent-test.js.snap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ChooseImageComponent/styles/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ChooseStepCounterComponent/ChooseStepCounterComponent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ChooseStepCounterComponent/__tests__/ChooseStepCounterComponent-test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ChooseStepCounterComponent/__tests__/__snapshots__/ChooseStepCounterComponent-test.js.snap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ChooseStepCounterComponent/styles/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ChooseTextComponent/ChooseTextComponent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ChooseTextComponent/__tests__/ChooseTextComponent-test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ChooseTextComponent/__tests__/__snapshots__/ChooseTextComponent-test.js.snap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ChooseTextComponent/styles/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/CreateTaskViewComponent/CreateTaskView.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/CreateTaskViewComponent/__tests__/CreateTaskViewComponent-test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/CreateTaskViewComponent/__tests__/__snapshots__/CreateTaskViewComponent-test.js.snap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/CreateTaskViewComponent/styles/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/FABComponent/FABComponent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/FABComponent/__tests__/FabComponent-android-test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/FABComponent/__tests__/FabComponent-test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/FABComponent/__tests__/__snapshots__/FabComponent-android-test.js.snap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/FABComponent/__tests__/__snapshots__/FabComponent-test.js.snap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/FABComponent/styles/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/HomeViewComponent/HomeView.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/HomeViewComponent/__tests__/HomeViewComponent-test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/HomeViewComponent/__tests__/__snapshots__/HomeViewComponent-test.js.snap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/HomeViewComponent/styles/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/MotivationalQuoteComponent/MotivationalQuoteComponent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/MotivationalQuoteComponent/__tests__/MotivationalQuoteComponent-test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/MotivationalQuoteComponent/__tests__/__snapshots__/MotivationalQuoteComponent-test.js.snap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/MotivationalQuoteComponent/styles/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/TaskContainerComponent/TaskContainerComponent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/TaskContainerComponent/__tests__/TaskContainerComponent-test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/TaskContainerComponent/__tests__/__snapshots__/TaskContainerComponent-test.js.snap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/TaskContainerComponent/styles/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/UploadImageModalComponent/UploadImageModalComponent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/UploadImageModalComponent/__tests__/UploadImageModalComponent-test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/UploadImageModalComponent/__tests__/__snapshots__/UploadImageModalComponent-test.js.snap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/UploadImageModalComponent/styles/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/AsyncStorage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/AsyncStorage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/Permissions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Permissions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/__tests__/AsyncStorage-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/__tests__/AsyncStorage-test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/__tests__/Permissions-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/__tests__/Permissions-test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,27 +63,29 @@
     <session id="256324037">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="js" value="78" />
-          <entry key="json" value="1" />
+          <entry key="js" value="88" />
+          <entry key="json" value="3" />
           <entry key="snap" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="78" />
+          <entry key="JSON" value="3" />
+          <entry key="JavaScript" value="88" />
           <entry key="Jest Snapshot" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="10162" />
+          <entry key="js" value="10170" />
+          <entry key="json" value="9" />
           <entry key="snap" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="10162" />
+          <entry key="JSON" value="9" />
+          <entry key="JavaScript" value="10170" />
           <entry key="Jest Snapshot" value="11" />
         </counts>
       </usages-collector>
@@ -80,10 +94,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/HomeViewComponent/HomeView.js">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="167" column="11" selection-start-line="167" selection-start-column="11" selection-end-line="167" selection-end-column="11" />
+            <state relative-caret-position="360">
+              <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/HomeViewComponent/HomeView.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="56" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -92,10 +115,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/components/HomeViewComponent/__tests__/HomeViewComponent-test.js">
+        <entry file="file://$PROJECT_DIR$/src/components/CreateTaskViewComponent/__tests__/CreateTaskViewComponent-test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="83" column="38" lean-forward="true" selection-start-line="83" selection-start-column="38" selection-end-line="83" selection-end-column="38" />
+            <state relative-caret-position="323">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -129,6 +152,7 @@
       <find>handle</find>
       <find>react-native-image</find>
       <find>getst</find>
+      <find>splash</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -138,7 +162,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/components/MotivationalQuoteComponent/__tests__/__snapshots__/MotivationalQuoteComponent-test.js.snap" />
-        <option value="$PROJECT_DIR$/App.js" />
         <option value="$PROJECT_DIR$/components/CheckboxComponent/CheckboxComponent.js" />
         <option value="$PROJECT_DIR$/components/CheckboxComponent/styles/styles.js" />
         <option value="$PROJECT_DIR$/components/CheckboxComponent/__tests__/CheckboxComponent-test.js" />
@@ -160,7 +183,6 @@
         <option value="$PROJECT_DIR$/components/CreateTaskViewComponent/CreateTaskView.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/util/AsyncStorage.js" />
-        <option value="$PROJECT_DIR$/components/HomeViewComponent/HomeView.js" />
         <option value="$PROJECT_DIR$/components/ChooseStepCounterComponent/__tests__/ChooseStepCounterComponent-test.js" />
         <option value="$PROJECT_DIR$/components/ChooseTextComponent/__tests__/ChooseTextComponent-test.js" />
         <option value="$PROJECT_DIR$/components/MotivationalQuoteComponent/__tests__/MotivationalQuoteComponent-test.js" />
@@ -172,6 +194,13 @@
         <option value="$PROJECT_DIR$/util/__tests__/Permissions-test.js" />
         <option value="$PROJECT_DIR$/util/__tests__/AsyncStorage-test.js" />
         <option value="$PROJECT_DIR$/components/HomeViewComponent/__tests__/HomeViewComponent-test.js" />
+        <option value="$PROJECT_DIR$/components/HomeViewComponent/HomeView.js" />
+        <option value="$PROJECT_DIR$/app.json" />
+        <option value="$PROJECT_DIR$/App.js" />
+        <option value="$PROJECT_DIR$/src/components/CreateTaskViewComponent/CreateTaskView.js" />
+        <option value="$PROJECT_DIR$/src/components/HomeViewComponent/HomeView.js" />
+        <option value="$PROJECT_DIR$/src/components/HomeViewComponent/__tests__/HomeViewComponent-test.js" />
+        <option value="$PROJECT_DIR$/src/components/CreateTaskViewComponent/__tests__/CreateTaskViewComponent-test.js" />
       </list>
     </option>
   </component>
@@ -198,22 +227,6 @@
               <item name="it2810-webutvikling-h18-prosjekt-3-04" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
-            <path>
-              <item name="it2810-webutvikling-h18-prosjekt-3-04" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="it2810-webutvikling-h18-prosjekt-3-04" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="FABComponent" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="it2810-webutvikling-h18-prosjekt-3-04" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="util" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -228,36 +241,7 @@
             <path>
               <item name="it2810-webutvikling-h18-prosjekt-3-04" type="b2602c69:ProjectViewProjectNode" />
               <item name="it2810-webutvikling-h18-prosjekt-3-04" type="462c0819:PsiDirectoryNode" />
-              <item name="__mocks__" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="it2810-webutvikling-h18-prosjekt-3-04" type="b2602c69:ProjectViewProjectNode" />
-              <item name="it2810-webutvikling-h18-prosjekt-3-04" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="it2810-webutvikling-h18-prosjekt-3-04" type="b2602c69:ProjectViewProjectNode" />
-              <item name="it2810-webutvikling-h18-prosjekt-3-04" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="HomeViewComponent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="it2810-webutvikling-h18-prosjekt-3-04" type="b2602c69:ProjectViewProjectNode" />
-              <item name="it2810-webutvikling-h18-prosjekt-3-04" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="HomeViewComponent" type="462c0819:PsiDirectoryNode" />
-              <item name="__tests__" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="it2810-webutvikling-h18-prosjekt-3-04" type="b2602c69:ProjectViewProjectNode" />
-              <item name="it2810-webutvikling-h18-prosjekt-3-04" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="it2810-webutvikling-h18-prosjekt-3-04" type="b2602c69:ProjectViewProjectNode" />
-              <item name="it2810-webutvikling-h18-prosjekt-3-04" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="__tests__" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -273,6 +257,11 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Larsk\OneDrive\Dokumenter\NTNU\Webutvikling\Prosjekt 3\it2810-webutvikling-h18-prosjekt-3-04\src" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -285,7 +274,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.CreateTaskViewComponent-test.js">
+  <component name="RunManager" selected="Jest.Run with coverage">
     <configuration name="AsyncStorage-test.js" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -380,21 +369,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="should_be_able_to_fetch_data_from_AsyncStorage - 2018.10.18 at 16h 12m 55s.xml">
-      <configuration name="should be able to fetch data from AsyncStorage" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="should_be_able_to_fetch_data_from_AsyncStorage - 2018.10.18 at 16h 15m 20s.xml">
-      <configuration name="should be able to fetch data from AsyncStorage" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="should_be_able_to_fetch_data_from_AsyncStorage - 2018.10.18 at 16h 15m 46s.xml">
-      <configuration name="should be able to fetch data from AsyncStorage" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="should_be_able_to_fetch_data_from_AsyncStorage - 2018.10.18 at 16h 16m 23s.xml">
-      <configuration name="should be able to fetch data from AsyncStorage" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="HomeViewComponent-test_js - 2018.10.18 at 16h 16m 33s.xml">
-      <configuration name="HomeViewComponent-test.js" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
     <history-entry file="should_be_able_to_fetch_data_from_AsyncStorage - 2018.10.18 at 16h 17m 40s.xml">
       <configuration name="should be able to fetch data from AsyncStorage" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
@@ -410,21 +384,35 @@
     <history-entry file="should_be_able_to_fetch_data_from_AsyncStorage - 2018.10.18 at 16h 19m 06s.xml">
       <configuration name="should be able to fetch data from AsyncStorage" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
+    <history-entry file="HomeViewComponent-test_js - 2018.10.18 at 16h 19m 24s.xml">
+      <configuration name="HomeViewComponent-test.js" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="AsyncStorage-test_js - 2018.10.18 at 16h 19m 29s.xml">
+      <configuration name="AsyncStorage-test.js" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Permissions-test_js - 2018.10.18 at 16h 19m 37s.xml">
+      <configuration name="Permissions-test.js" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="CreateTaskViewComponent-test_js - 2018.10.18 at 16h 19m 51s.xml">
+      <configuration name="CreateTaskViewComponent-test.js" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Run_with_coverage - 2018.10.18 at 16h 56m 57s.xml">
+      <configuration name="Run with coverage" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30268000" />
+    <option name="totallyTimeSpent" value="32043000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18809272" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18809272" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4219089" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4219089" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -480,16 +468,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1003">
           <caret line="59" column="23" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -622,13 +600,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -769,37 +740,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/__tests__/Permissions-test.js">
+    <entry file="file://$PROJECT_DIR$/src/util/__tests__/Permissions-test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="36" column="46" lean-forward="true" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/__tests__/AsyncStorage-test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2106">
-          <caret line="128" column="3" selection-start-line="128" selection-start-column="3" selection-end-line="128" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/AsyncStorage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="27" column="32" lean-forward="true" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/HomeViewComponent/HomeView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="167" column="11" selection-start-line="167" selection-start-column="11" selection-end-line="167" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -807,6 +751,103 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="83" column="38" lean-forward="true" selection-start-line="83" selection-start-column="38" selection-end-line="83" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/HomeViewComponent/HomeView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="31" lean-forward="true" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util/AsyncStorage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="32" lean-forward="true" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util/Permissions.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/CheckboxComponent/CheckboxComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/CreateTaskViewComponent/CreateTaskView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/HomeViewComponent/__tests__/HomeViewComponent-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/HomeViewComponent/HomeView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="56" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util/__tests__/AsyncStorage-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2176">
+          <caret line="128" column="3" selection-start-line="128" selection-start-column="3" selection-end-line="128" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/CreateTaskViewComponent/__tests__/CreateTaskViewComponent-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
