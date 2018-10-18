@@ -17,7 +17,7 @@ exports[`renders correctly 1`] = `
   multiline={false}
   onChangeText={[Function]}
   onSubmitEditing={[Function]}
-  placeholder="Type in your step-goal 🤸🏼‍♀️"
+  placeholder="Enter step-goal 🤸🏼‍♀️"
   returnKeyType="done"
   style={
     Object {
