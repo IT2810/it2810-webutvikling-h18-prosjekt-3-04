@@ -154,7 +154,7 @@ renderiOSComponent(){
     <ActionButton.Item title="New text task"/>
 </ActionButton> 
 ```
-Knappen ```<ActionButton>``` vil rendre alle ```<ActionButton.item/>``` når den trykkes på, ```renderiOSComponent()```-funksjonen sjekker hvilken platform som brukes, og et ```<ActionButton.item/>``` kun på ios. 
+Knappen ```<ActionButton>``` vil rendre alle ```<ActionButton.item/>``` når den trykkes på. Siden skritteller ikke er tigjengelig på Android, bruker vi ```renderiOSComponent()```-funksjonen for å sjekke hvilken platform som brukes, og returnerer en ekstra ```<ActionButton.item/>``` på ios. 
 
 ### react-native-vector-icons
 Alle ikonene brukt i appen er Ionicons fra react-native-vector-icons, vi har valgt de iconene som fungerer på tvers av ios, android og expo. Et eksempel på bruk av Ionicons:
