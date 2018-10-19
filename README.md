@@ -26,10 +26,9 @@ Under finner du våre mockups. Vi gjorde små endringer etterhvert som vi så fo
 Under utviklingen av BUTLER har vi brukt react-native med bruk av expo-verktøyet. Alle biblioteker vi har benyttet oss av er valgt med tanke på at de skal fungere på ios, android og med expo. 
 
 ### AsyncStorage
-Måten vi brukte AsyncStorage på var at vi bygget våre egne funksjoner rundt de innebygde funksjonene i AsyncStorage. Funksjonene vi brukte fra AsyncStorage var getItem(), setItem() og clear().
+AsyncStorage var et krav for prosjektet og ble implementert gjennom en egen wrapper-klasse som vi skrev selv. Målet med denne klassen var å holde all AsyncStorage-funksjonalitet på ett sted i koden, samt forenkle bruken av denne.
 
-Funksjonene vi lagde var RetrieveTodos(), StoreTodos(todos), AddTodo(todo) og Clear(). RetrieveTodos() bruker AsyncStorage.getItem() til å hente gjøremålene som er lagret. Gjøremålene lagres i en liste med gjøremål-objekter i AsyncStorage-lagringen.
-StoreTodos(todos) tar inn en liste med gjøremål-objekter og bruker  AsyncStorage.setItem() for å lagre gjøremålene. AddTodo(todo) legger til nye gjøremål, ved å hente alle gjøremål  med RetrieveTodos() og legge til det nye gjøremålet i listen. Den nye listen vil så lagres med AsyncStorage.setItem(). Clear() funksjonen benytter seg av AsyncStorage.clear() til å fjerne alle lagrede gjøremål. Alle AsyncStorage funksjonene skjer inne i try/catch for å fange opp eventuelle feil. Eks:
+Funksjonene vi kom fram til var ```RetrieveTodos()```, ```StoreTodos(todos)```, ```AddTodo(todo)``` og ```Clear()```. ```RetrieveTodos()``` bruker ```AsyncStorage.getItem()``` til å hente gjøremålene som er lagret. Gjøremålene lagres i en liste med gjøremål-objekter i AsyncStorage-lagringen.```StoreTodos(todos)``` tar inn en liste med gjøremål-objekter og bruker ```AsyncStorage.setItem()``` for å lagre gjøremålene. ```AddTodo(todo)``` legger til nye gjøremål, ved å hente alle gjøremål  med ```RetrieveTodos()``` og legge til det nye gjøremålet i listen. Den nye listen vil så lagres med ```AsyncStorage.setItem()```. ```Clear()``` funksjonen benytter seg av ```AsyncStorage.clear()``` til å fjerne alle lagrede gjøremål. Alle AsyncStorage funksjonene skjer inne i try/catch for å fange opp eventuelle feil. Eks:
 
 ```javascript
 
@@ -45,7 +44,7 @@ export async function RetrieveTodos() {
 
 
 ### Permissions
-For å legge til bilder trenger vi tilgang til brukeren bilde-bibliotek og kameraene på enheten, dette brukte vi Permissions verktøyet til expo for å få til.  I Permissions.js har vi to funksjoner som håndterer permissions, ```RequestPermission()``` og ```CheckPermission()```. ```RequestPermission()``` ber om tilgang, og CheckPermission sjekker om brukeren allerede har tilgang. ```RequestPermission()``` benytter seg av Permission.askAsync() spør brukeren om tilgang i et pop-up-vindu. Tilgang spørres etter i ```_pickImage``` og ```_pickCameraImage``` funksjonene i CreateTaskView.js, som kjøres når brukeren skal legge til et bilde til et gjøremål. 
+Siden applikasjonen vår gir mulighet til opplasting av bilder, trenger vi tilgang til brukerens bilde-bibliotek og kamera. For å få tilgang til disse benyttet vi Permissions-verktøyet til expo. I likhet med AsyncStorage, lagde vi vår egen wrapper til disse funksjonene slik at de kunne benyttes på en enkel og ryddig måte i koden vår.  I Permissions.js har vi to funksjoner som håndterer permissions, ```RequestPermission()``` og ```CheckPermission()```. ```RequestPermission()``` ber om tilgang, og ```CheckPermission()``` sjekker om brukeren allerede har tilgang. ```RequestPermission()``` benytter seg av ```Permission.askAsync()``` og spør brukeren om tilgang i et pop-up-vindu. Tilgang spørres etter i ```_pickImage``` og ```_pickCameraImage``` funksjonene i CreateTaskView.js, som kjøres når brukeren skal legge til et bilde til et gjøremål. 
 
 ```CheckPermission()``` benytter seg av ```Permissions.getAsync()``` som sjekker om appen allerede har fått tilgang til de forskjellige tilgangs-parametrene som i vårt tilfelle er ```camera``` og ```cameraRoll```. 
 
@@ -126,7 +125,7 @@ static navigationOptions = {
 
 
 ### react-native-modal
-Modal brukes når man vil vise innhold som for eksempel en pop-up over annet innhold. I appen vår bruker vi det når man velger om man vil laste opp et bilde fra minnet på telefonen, eller om man vil ta et bilde med kameraet. Modal er også en dependency for dateTime-pickeren vi har valgt å bruke. 
+Dette biblioteket brukes når man vil vise innhold som for eksempel en pop-up over annet innhold. I appen vår bruker vi dette når man velger om man vil laste opp et bilde fra minnet på telefonen, eller om man vil ta et bilde med kameraet. Modal er også en dependency for dateTime-pickeren vi har valgt å bruke, så dette biblioteket passet fint for våre behov. 
 
 ```xml
 <Modal isVisible={this.props.isModalVisible}
@@ -137,8 +136,8 @@ Modal brukes når man vil vise innhold som for eksempel en pop-up over annet inn
   </View>
 </Modal>
 ```
-Slik ser vår implementasjon av Modal’en som velger bilde-input-metoder. Modal’en blir togglet av og på med prop’en isModalVisible som passes ned fra CreateTaskViewComponent.js. Til vanlig er ikke Modal’en synlig, og isModalVisible blir lik True når man trykker på feltet for å legge til bilde i et bilde-gjøremål. Modalen inneholder to knapper som har hver sin funksjon som kalles, og det er disse brukeren trykker på for å velge “bilde-kilde”.
 
+Slik ser vår implementasjon av Modal’en som velger bilde-input-metoder. Modal’en blir togglet av og på med prop’en isModalVisible som passes ned fra CreateTaskViewComponent.js. Til vanlig er ikke Modal’en synlig, og isModalVisible blir lik True når man trykker på feltet for å legge til bilde i et bilde-gjøremål. Modalen inneholder to knapper som har hver sin funksjon som kalles, og det er disse brukeren trykker på for å velge “bilde-kilde”.
 
 ### react-native-action-button
 Vi brukte actionbutton til å lage FAB-knappen som sender deg til sidene hvor man kan lage de forskjellige taskene. Under er et simplifisert eksempel på hvordan vi implementerte FABComponent.js
